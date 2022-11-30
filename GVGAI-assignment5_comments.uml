@@ -1,0 +1,1943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>D:/Study/reinforcement learning pacman/GVGAI-assignment4_comments</OriginalElement>
+  <nodes>
+    <node x="11599.161058736303" y="2186.8125161397616">ontology.effects.unary.KillIfHasLess</node>
+    <node x="-178.8416152384231" y="1633.4541386175515">ontology.sprites.Door</node>
+    <node x="6449.842275353758" y="2408.086089538376">tools.ElapsedCpuTimer</node>
+    <node x="5458.087666466366" y="2999.0960967777864">core.VGDLParser</node>
+    <node x="10431.906949763674" y="1880.898288876992">core.generator.AbstractLevelGenerator</node>
+    <node x="6500.943474195762" y="1076.2837592547044">ontology.sprites.npc.Fleeing</node>
+    <node x="2689.3998581112533" y="1559.226294058078">ontology.sprites.Resource</node>
+    <node x="9827.382689427974" y="2574.9131471924115">levelGenerators.geneticLevelGenerator.LevelGenerator</node>
+    <node x="8173.068097549325" y="1887.923407225132">core.content.MappingContent</node>
+    <node x="-68.56166132327974" y="2587.7481582397554">levelGenerators.constraints.GoalConstraint</node>
+    <node x="8086.844663159312" y="1262.9527968279983">controllers.sampleMCTS.SingleTreeNode</node>
+    <node x="6525.147904963131" y="3032.7369566420066">tools.pathfinder.PathFinder</node>
+    <node x="5727.922071282179" y="948.8570167026944">ontology.sprites.npc.RandomInertial</node>
+    <node x="6457.2960019359225" y="1568.5258981816164">ontology.effects.unary.TransformTo</node>
+    <node x="5220.133780819643" y="1753.3305518952748">ontology.effects.unary.CloneSprite</node>
+    <node x="4870.013329926147" y="3051.8940015605795">controllers.olets.SingleMCTSPlayer</node>
+    <node x="11599.156766352975" y="2546.508602507293">ontology.effects.unary.ShieldFrom</node>
+    <node x="3238.0913535954382" y="3036.5571166794825">core.VGDLFactory</node>
+    <node x="1387.3609063059753" y="2637.9708470708806">core.VGDLRegistry</node>
+    <node x="2314.7780900230982" y="1556.3680715620353">ontology.sprites.producer.Portal</node>
+    <node x="7365.149222714652" y="1153.1512069412722">ontology.physics.Physics</node>
+    <node x="6054.546614094366" y="1754.1871298292062">core.player.AbstractPlayer</node>
+    <node x="8155.243459747739" y="2177.6027399636437">tools.Vector2d</node>
+    <node x="4724.60708686721" y="2291.3816870749506">controllers.sampleMCTS.Agent</node>
+    <node x="5594.06563625498" y="1762.5732784373258">controllers.learningmodel.Agent</node>
+    <node x="8466.833285196655" y="2684.6718453427297">gvgai.GVGAI</node>
+    <node x="9753.225915389665" y="2353.883188453987">ontology.effects.unary.SubtractHealthPoints</node>
+    <node x="7270.052689629041" y="3430.845378511433">controllers.sampleFlatMCTS.TreeNode</node>
+    <node x="9481.308778484216" y="3141.7747888627673">tools.pathfinder.AStar</node>
+    <node x="6627.973023383422" y="1369.0274344973177">ontology.physics.GravityPhysics</node>
+    <node x="3642.7717384699245" y="1521.2739288665985">ontology.avatar.oriented.ShootAvatar</node>
+    <node x="2441.597024368288" y="3321.451511509458">core.game.ForwardModel</node>
+    <node x="5575.8058250505655" y="2459.820243362794">controllers.sampleOLMCTS.SingleMCTSPlayer</node>
+    <node x="227.82368320333416" y="1525.7293681865121">ontology.sprites.missile.Walker</node>
+    <node x="9863.548629635936" y="2889.0208869896296">controllers.learningmodel.RLDataExtractor</node>
+    <node x="2980.733002310203" y="2301.559811190027">levelGenerators.constraints.WinConstraint</node>
+    <node x="7714.041798502039" y="1853.2059442006152">ontology.effects.binary.WallStop</node>
+    <node x="10329.609385741434" y="3179.089471646611">tools.Utils</node>
+    <node x="595.8503342739338" y="1801.698838848718">ontology.sprites.missile.ErraticMissile</node>
+    <node x="8890.365101526784" y="3569.2908237885376">core.Node</node>
+    <node x="4135.667059476181" y="2780.1150772728224">tools.KeyPulse.Pulse</node>
+    <node x="7306.770910538463" y="2150.165522092359">controllers.human.Agent</node>
+    <node x="5930.058876810213" y="2114.539359321093">controllers.doNothing.Agent</node>
+    <node x="6062.832942705829" y="2849.577954265078">levelGenerators.geneticLevelGenerator.SharedData</node>
+    <node x="1567.5738530829499" y="2397.7684771591353">controllers.Heuristics.SimpleStateHeuristic</node>
+    <node x="2248.994238820279" y="1868.1789775150155">ontology.sprites.ResourcePack</node>
+    <node x="3342.7561045879306" y="1964.289513858968">ontology.avatar.oriented.MissileAvatar</node>
+    <node x="5272.286123851782" y="2738.992952197531">controllers.Tester.SingleMCTSPlayer</node>
+    <node x="4511.392467561827" y="1759.6965553800087">core.competition.CompetitionParameters</node>
+    <node x="10984.395124905895" y="1884.183465370878">ontology.effects.unary.AddHealthPoints</node>
+    <node x="7777.542311091168" y="3499.845378511433">core.game.GameDescription.TerminationData</node>
+    <node x="3847.8253592218957" y="3038.8457963775613">core.game.Observation</node>
+    <node x="4759.5900457948455" y="2714.5251612539296">controllers.sampleonesteplookahead.Agent</node>
+    <node x="4053.9719803153102" y="2282.556731943446">ontology.effects.binary.BounceForward</node>
+    <node x="310.4696063747166" y="3141.5234397918225">tools.GameAnalyzer</node>
+    <node x="8674.152226131193" y="4231.008461878765">ontology.Types</node>
+    <node x="5722.933333664516" y="1392.2241082642877">ontology.effects.binary.KillIfNotFrontal</node>
+    <node x="1427.6361056797055" y="1889.525501926616">ontology.sprites.producer.RandomBomber</node>
+    <node x="2626.450092460507" y="1293.8696590113768">ontology.sprites.Passive</node>
+    <node x="6332.269749844412" y="2124.246193232888">controllers.sampleRandom.Agent</node>
+    <node x="265.00454543859763" y="2759.585260190367">core.termination.MultiSpriteCounter</node>
+    <node x="9306.837049907135" y="3612.220871504889">tools.pathfinder.Node</node>
+    <node x="11690.02713163984" y="2837.27306996519">ontology.effects.binary.CollectResource</node>
+    <node x="7985.042311091168" y="3499.845378511433">core.game.GameDescription.SpriteData</node>
+    <node x="5969.767624844002" y="2290.0869822560767">controllers.sampleMCTS.SingleMCTSPlayer</node>
+    <node x="388.9660188061748" y="2120.317826405148">ontology.effects.unary.SpawnIfHasMore</node>
+    <node x="1918.7479782465166" y="2410.5229512433843">controllers.Heuristics.StateHeuristic</node>
+    <node x="11000.306826121114" y="2176.3391176497676">levelGenerators.constructiveLevelGenerator.LevelGenerator</node>
+    <node x="991.2261716738792" y="2638.751833641739">core.termination.SpriteCounter</node>
+    <node x="4420.57992926214" y="2612.274708492793">core.VGDLViewer</node>
+    <node x="4816.12743835164" y="1803.6542568318446">ontology.effects.binary.KillIfOtherHasMore</node>
+    <node x="6860.59655266338" y="2512.0172971986844">tools.Pair</node>
+    <node x="8467.555669799201" y="1987.4256226244174">controllers.sampleOLMCTS.SingleTreeNode</node>
+    <node x="10943.70706059159" y="2082.634243338542">levelGenerators.randomLevelGenerator.LevelGenerator.DataPoint</node>
+    <node x="5124.954671526017" y="2007.8890312733747">controllers.replayer.Agent</node>
+    <node x="8220.10534948263" y="3004.7204807259536">controllers.learningmodel.QPolicy</node>
+    <node x="7115.993201179261" y="2372.6150772728224">core.game.StateObservation</node>
+    <node x="234.9562418199804" y="2447.5520267690817">ontology.effects.binary.AddTimer</node>
+    <node x="3326.2319921217722" y="3633.6413657557805">tools.StatSummary</node>
+    <node x="8083.27955862294" y="3637.609652124511">levelGenerators.constructiveLevelGenerator.LevelData</node>
+    <node x="969.8375563705576" y="3032.5115923337044">tools.LevelMapping</node>
+    <node x="3989.0618849513803" y="1079.48096859791">ontology.sprites.OrientedFlicker</node>
+    <node x="182.438703917817" y="1800.7876533840617">ontology.sprites.missile.WalkerJumper</node>
+    <node x="4434.123440277953" y="872.5675321096082">ontology.sprites.Flicker</node>
+    <node x="6058.338346323467" y="1553.9791228927347">ontology.effects.binary.KillIfFromAbove</node>
+    <node x="3339.917911025821" y="2578.441502773106">tools.KeyInput</node>
+    <node x="3961.726416465176" y="664.3322788829485">ontology.avatar.HorizontalAvatar</node>
+    <node x="10079.25454803512" y="2125.9465888894306">ontology.effects.binary.CollectResourceIfHeld</node>
+    <node x="10261.33243713048" y="3005.1881864271495">levelGenerators.constructiveLevelGenerator.LevelCoverData</node>
+    <node x="8855.093483701556" y="1945.2047327089622">ontology.effects.unary.SpawnIfHasLess</node>
+    <node x="1004.9172441282401" y="1824.4005363502365">ontology.sprites.missile.RandomMissile</node>
+    <node x="6881.751600422215" y="717.9894358792708">ontology.sprites.npc.Chaser</node>
+    <node x="2659.458938450116" y="1855.756795459511">ontology.avatar.oriented.OngoingAvatar</node>
+    <node x="862.8608573811971" y="2116.3402595301463">ontology.effects.binary.TransformToSingleton</node>
+    <node x="4121.650886912266" y="2033.753495356278">ontology.effects.binary.ChangeResource</node>
+    <node x="9111.47816579003" y="2559.215447020876">core.content.TerminationContent</node>
+    <node x="11001.198194814528" y="2877.259009326611">core.competition.AgentExecutor</node>
+    <node x="3271.039079167995" y="2305.378645920005">levelGenerators.constraints.CoverPercentageConstraint</node>
+    <node x="5527.902917893835" y="2068.634243338542">tools.pathfinder.Agent</node>
+    <node x="3078.7561385731337" y="2763.618519029575">Assignment4</node>
+    <node x="1996.5840880503015" y="1323.395486528775">ontology.sprites.producer.SpriteProducer</node>
+    <node x="3007.6633234783335" y="-114.45517703734731">core.VGDLSprite</node>
+    <node x="2971.332122636945" y="2113.3076416821377">ontology.effects.binary.KillBoth</node>
+    <node x="632.0731670236706" y="2382.0739418913754">levelGenerators.constraints.CombinedConstraints</node>
+    <node x="8581.473947824865" y="1589.0282659684208">core.content.SpriteContent</node>
+    <node x="9193.700973629693" y="2217.5700821061487">ontology.effects.unary.StepBack</node>
+    <node x="5586.695615525961" y="2683.080323045653">tools.JEasyFrame</node>
+    <node x="3428.1424738744277" y="5455.787165991423">core.game.Game.Bucket</node>
+    <node x="8870.652226131193" y="4205.508461878765">ontology.Types.MOVEMENT</node>
+    <node x="6116.159277122503" y="1239.1468707050838">ontology.effects.Effect</node>
+    <node x="9463.086188208807" y="2734.7445006055623">core.content.InteractionContent</node>
+    <node x="8140.77955862294" y="4031.609652124511">levelGenerators.constructiveLevelGenerator.LevelData.Point</node>
+    <node x="2352.7257693457177" y="2865.0994833853474">tools.WindowInput</node>
+    <node x="1014.27176732454" y="1596.7196607775245">ontology.sprites.missile.Missile</node>
+    <node x="2282.4752931321705" y="2647.6493312404364">controllers.Heuristics.WinScoreHeuristic</node>
+    <node x="5127.443695047368" y="2375.2553905830096">controllers.repeatOLETS.Agent</node>
+    <node x="3749.5780787236718" y="2020.2168270869083">ontology.effects.unary.Spawn</node>
+    <node x="674.3408614917679" y="2846.195473491806">core.termination.Timeout</node>
+    <node x="4422.349983903612" y="1196.7080875266859">ontology.sprites.Spreader</node>
+    <node x="4815.310775195777" y="1465.9209256210988">ontology.sprites.npc.RandomPathAltChaser</node>
+    <node x="3076.4721451746477" y="1707.2883724372919">ontology.avatar.oriented.OrientedAvatar</node>
+    <node x="10476.798651877205" y="2421.755320366479">core.ArcadeMachine</node>
+    <node x="6735.379494665666" y="2172.293449010914">controllers.olets.Agent</node>
+    <node x="3704.2713619732763" y="2679.5647264474105">tools.KeyHandler</node>
+    <node x="8914.816045631329" y="1585.869194822707">ontology.effects.unary.WrapAround</node>
+    <node x="1653.2509772668957" y="2205.6881470629996">levelGenerators.constraints.DeathConstraint</node>
+    <node x="4082.667059476181" y="2606.4473057499085">tools.KeyPulse</node>
+    <node x="4254.356175963278" y="3019.4868023652957">controllers.sampleGA.Agent</node>
+    <node x="7335.534216926887" y="1695.384869607014">ontology.effects.unary.TurnAround</node>
+    <node x="7709.185256462938" y="2135.4010417482996">controllers.Tester.Agent</node>
+    <node x="609.5550865517987" y="1485.9936025418328">ontology.sprites.Immovable</node>
+    <node x="7643.090024936539" y="2548.434567523734">controllers.sampleFlatMCTS.Agent</node>
+    <node x="5273.418196185416" y="1387.2489106937508">ontology.sprites.npc.RandomAltChaser</node>
+    <node x="11246.989145291462" y="2819.0433594293077">tools.StepController</node>
+    <node x="2227.7027864465995" y="2062.343797353878">ontology.effects.unary.KillSprite</node>
+    <node x="7618.042311091168" y="3031.966741068478">core.game.GameDescription</node>
+    <node x="4425.588996427967" y="2397.6233811512943">levelGenerators.constraints.SolutionLengthConstraint</node>
+    <node x="5784.797733222184" y="3380.6873552399356">HumanPlay</node>
+    <node x="3160.760228661904" y="1288.719650235683">ontology.avatar.MovingAvatar</node>
+    <node x="1501.2737930357657" y="2940.005830737138">levelGenerators.geneticLevelGenerator.Chromosome.SpritePointData</node>
+    <node x="9916.916598341719" y="3335.596598020723">core.game.Event</node>
+    <node x="923.3608573811971" y="3468.5234397918225">tools.GameAnalyzer.InteractionType</node>
+    <node x="1872.991662480807" y="1703.3806471797889">ontology.sprites.producer.Bomber</node>
+    <node x="1224.3666018734884" y="2412.488513873853">levelGenerators.constraints.AvatarNumberConstraint</node>
+    <node x="10459.20706059159" y="2113.227482528425">levelGenerators.randomLevelGenerator.LevelGenerator</node>
+    <node x="8917.94003537161" y="2299.476985783812">core.content.Content</node>
+    <node x="4050.3790422795373" y="1382.8695718554823">ontology.effects.unary.KillIfHasMore</node>
+    <node x="2599.51830329378" y="2185.8027325642306">ontology.effects.binary.PullWithIt</node>
+    <node x="7782.042311091168" y="2877.259009326611">core.game.GameDescription.InteractionData</node>
+    <node x="5529.7415931911255" y="606.624189950388">ontology.sprites.npc.RandomNPC</node>
+    <node x="6243.288279141512" y="852.2184291600781">ontology.sprites.Conveyor</node>
+    <node x="8626.652226131193" y="4338.008461878765">ontology.Types.WINNER</node>
+    <node x="7495.26223374456" y="1387.9853860152662">ontology.physics.GridPhysics</node>
+    <node x="1803.8782026485133" y="2633.505830737138">levelGenerators.geneticLevelGenerator.Chromosome</node>
+    <node x="3588.2568701842283" y="1013.475027863896">ontology.avatar.FlakAvatar</node>
+    <node x="1447.2737930357657" y="1531.0743896123722">ontology.sprites.producer.SpawnPoint</node>
+    <node x="6846.095555617645" y="1877.5319734460013">controllers.sampleOLMCTS.Agent</node>
+    <node x="9381.598178853368" y="2486.031702686586">ontology.effects.unary.ReverseDirection</node>
+    <node x="8560.899381672642" y="2966.1728618193993">controllers.Tester.SingleTreeNode</node>
+    <node x="-143.518409007396" y="2106.394820106024">ontology.effects.TimeEffect</node>
+    <node x="613.8014628788342" y="2608.298267717318">core.termination.Termination</node>
+    <node x="8828.098224986446" y="2562.696524860587">core.content.GameContent</node>
+    <node x="3635.4757363926533" y="2221.4860749390195">core.SpriteGroup</node>
+    <node x="4838.079450010869" y="1176.3841600851563">ontology.sprites.npc.PathAltChaser</node>
+    <node x="1941.9648357881456" y="2206.2972038755574">levelGenerators.constraints.AbstractConstraint</node>
+    <node x="2957.6424738744277" y="4650.787165991423">core.game.Game</node>
+    <node x="2864.2701579163095" y="2493.2812244884094">core.game.BasicGame</node>
+    <node x="6459.721556675847" y="1842.2030979174106">ontology.effects.binary.TransformToAll</node>
+    <node x="7335.444713753195" y="1952.9482817679805">ontology.effects.binary.TeleportToExit</node>
+    <node x="8619.027510750171" y="1234.4949007833802">ontology.effects.unary.UndoAll</node>
+    <node x="7227.980400071051" y="1495.0987050504377">ontology.physics.NoFrictionPhysics</node>
+    <node x="1274.0550607366904" y="2128.6557629167164">ontology.effects.unary.FlipDirection</node>
+    <node x="4911.312933895036" y="714.8029797679519">ontology.sprites.npc.AlternateChaser</node>
+    <node x="6935.394747637609" y="1625.5721539670822">ontology.effects.binary.KillIfFrontal</node>
+    <node x="5333.1777591712425" y="995.2382465128264">ontology.sprites.npc.PathChaser</node>
+    <node x="1855.6418741708885" y="2013.2780036061454">ontology.effects.binary.AttractGaze</node>
+    <node x="2312.291992635601" y="2402.420514488796">levelGenerators.constraints.SpriteNumberConstraint</node>
+    <node x="10603.112480812819" y="2955.309305022748">tools.IO</node>
+    <node x="6884.65927832138" y="1266.290609297971">ontology.physics.ContinuousPhysics</node>
+    <node x="6206.842275353758" y="2571.586089538376">tools.ElapsedCpuTimer.TimerType</node>
+    <node x="8604.652226131193" y="3965.508461878765">ontology.Types.ACTIONS</node>
+    <node x="9057.76254844155" y="2867.6388391429655">controllers.olets.SingleTreeNode</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="core.VGDLViewer" target="core.SpriteGroup" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="tools.WindowInput" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.TimeEffect" target="ontology.effects.Effect" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.termination.SpriteCounter" target="core.termination.Termination" relationship="GENERALIZATION">
+      <point x="-1.7167387909466925E-4" y="66.50016635826114" />
+      <point x="1121.226" y="2809.0" />
+      <point x="763.801" y="2809.0" />
+      <point x="-4.628788341278778E-4" y="77.99973228268163" />
+    </edge>
+    <edge source="tools.pathfinder.PathFinder" target="core.game.Observation" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleGA.Agent" target="tools.ElapsedCpuTimer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.SpriteGroup" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.olets.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleMCTS.Agent" target="controllers.sampleMCTS.SingleMCTSPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.ElapsedCpuTimer" target="tools.ElapsedCpuTimer.TimerType" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.BasicGame" target="tools.pathfinder.PathFinder" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.Event" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.Tester.Agent" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelGenerator" target="levelGenerators.constructiveLevelGenerator.LevelCoverData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.KillIfNotFrontal" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelData.Point" target="levelGenerators.constructiveLevelGenerator.LevelData" relationship="INNER_CLASS">
+      <point x="0.0" y="-66.5" />
+      <point x="0.0" y="172.5" />
+    </edge>
+    <edge source="controllers.Heuristics.WinScoreHeuristic" target="controllers.Heuristics.StateHeuristic" relationship="GENERALIZATION">
+      <point x="5.316706867829453" y="-41.00033124043648" />
+      <point x="2427.792" y="2535.0" />
+      <point x="1902.0" y="2535.0" />
+      <point x="1902.0" y="2451.523" />
+      <point x="-139.99997824651655" y="4.875661579717416E-5" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="4.4438235454435926E-4" y="52.50002655399885" />
+      <point x="7060.596" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="core.game.Game" target="core.VGDLViewer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Observation" target="tools.Vector2d" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.doNothing.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="1.2318978679104475E-4" y="40.999640678907326" />
+      <point x="6101.059" y="2235.0" />
+      <point x="5508.0" y="2235.0" />
+      <point x="5508.0" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="tools.pathfinder.PathFinder" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.RandomNPC" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="4.068088746862486E-4" y="-98.50018995038795" />
+      <point x="5701.242" y="-136.0" />
+      <point x="2973.0" y="-136.0" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="ontology.avatar.MovingAvatar" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="-2.2866190374770667E-4" y="-144.49965023568302" />
+      <point x="3335.76" y="1120.0" />
+      <point x="2973.0" y="1120.0" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="ontology.effects.unary.AddHealthPoints" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-1.2490589506342076E-4" y="-41.00046537087792" />
+      <point x="11139.895" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="controllers.Tester.SingleTreeNode" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.Types" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.player.AbstractPlayer" target="ontology.Types.ACTIONS" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.Agent" target="ontology.Types.ACTIONS" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.PathFinder" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.AvatarNumberConstraint" target="tools.GameAnalyzer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.repeatOLETS.Agent" target="ontology.Types.ACTIONS" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.oriented.ShootAvatar" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLViewer" target="core.SpriteGroup" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelGenerator" target="tools.GameAnalyzer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.Game.Bucket" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.GameDescription.InteractionData" target="core.game.GameDescription" relationship="INNER_CLASS">
+      <point x="-82.00031109116753" y="-9.326610779680777E-6" />
+      <point x="7600.542" y="2918.259" />
+      <point x="7600.542" y="3485.0" />
+      <point x="7864.042" y="3485.0" />
+      <point x="-3.110911675321404E-4" y="218.50025893152224" />
+    </edge>
+    <edge source="controllers.olets.SingleMCTSPlayer" target="controllers.olets.SingleTreeNode" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.AddTimer" target="core.content.InteractionContent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game.Bucket" target="core.game.Game" relationship="INNER_CLASS">
+      <point x="-179.0" y="0.0" />
+      <point x="207.5" y="0.0" />
+    </edge>
+    <edge source="controllers.olets.Agent" target="ontology.Types.ACTIONS" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.content.Content" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.TransformTo" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-1.9359222278581E-6" y="66.50010181838343" />
+      <point x="6663.296" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.Event" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleMCTS.SingleMCTSPlayer" target="controllers.sampleMCTS.SingleTreeNode" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.Types" target="tools.Vector2d" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.termination.Timeout" target="core.termination.Termination" relationship="GENERALIZATION">
+      <point x="1.3850823211214447E-4" y="-52.50047349180568" />
+      <point x="785.841" y="2809.0" />
+      <point x="763.801" y="2809.0" />
+      <point x="-4.628788341278778E-4" y="77.99973228268163" />
+    </edge>
+    <edge source="ontology.Types.MOVEMENT" target="ontology.Types" relationship="INNER_CLASS">
+      <point x="-106.5002261311929" y="-4.618787652361789E-4" />
+      <point x="8787.652" y="4258.008" />
+      <point x="8787.652" y="4312.0" />
+      <point x="8722.152" y="4312.0" />
+      <point x="-2.2613119290326722E-4" y="26.999538121234764" />
+    </edge>
+    <edge source="controllers.sampleGA.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.missile.WalkerJumper" target="ontology.sprites.missile.Walker" relationship="GENERALIZATION">
+      <point x="0.0" y="-75.5" />
+      <point x="-23.884979285517147" y="75.5" />
+    </edge>
+    <edge source="tools.pathfinder.Node" target="tools.Vector2d" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleFlatMCTS.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.ArcadeMachine" target="tools.StatSummary" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.Door" target="ontology.sprites.Immovable" relationship="GENERALIZATION">
+      <point x="0.0" y="-87.0" />
+      <point x="-29.34161523842309" y="1508.2293681865121" />
+      <point x="-167.0" y="-64.7642343553207" />
+    </edge>
+    <edge source="controllers.olets.Agent" target="controllers.olets.SingleMCTSPlayer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.Tester.Agent" target="controllers.Tester.SingleMCTSPlayer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.ForwardModel" target="core.game.Observation" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.termination.MultiSpriteCounter" target="core.termination.Termination" relationship="GENERALIZATION">
+      <point x="142.50045456140236" y="2.41473980963292" />
+      <point x="785.841" y="2828.5" />
+      <point x="785.841" y="2809.0" />
+      <point x="763.801" y="2809.0" />
+      <point x="-4.628788341278778E-4" y="77.99973228268163" />
+    </edge>
+    <edge source="ontology.sprites.Spreader" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.PathFinder" target="tools.pathfinder.AStar" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.AStar" target="tools.pathfinder.PathFinder" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.Node" target="core.content.InteractionContent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.content.Content" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.repeatOLETS.Agent" target="controllers.olets.Agent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLParser" target="tools.Pair" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.SharedData" target="core.game.GameDescription" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.KillIfHasLess" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-5.873630288988352E-5" y="-40.999516139761454" />
+      <point x="11754.661" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="tools.pathfinder.Agent" target="tools.pathfinder.PathFinder" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLSprite" target="ontology.physics.NoFrictionPhysics" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleRandom.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="2.501555882190587E-4" y="-64.0001932328878" />
+      <point x="6503.77" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="ontology.sprites.Resource" target="ontology.sprites.Passive" relationship="GENERALIZATION">
+      <point x="-68.94976565074603" y="-87.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="ontology.physics.GridPhysics" target="ontology.physics.Physics" relationship="REALIZATION">
+      <point x="15.0" y="-75.5" />
+      <point x="145.1130110299082" y="50.0" />
+    </edge>
+    <edge source="ontology.sprites.Immovable" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="-8.655179874494934E-5" y="-86.99960254183293" />
+      <point x="776.555" y="1120.0" />
+      <point x="2973.0" y="1120.0" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="ontology.sprites.Flicker" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="-4.402779532028944E-4" y="-86.99953210960825" />
+      <point x="4587.123" y="-136.0" />
+      <point x="2973.0" y="-136.0" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="core.game.Game" target="ontology.Types.WINNER" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.ForwardModel" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome" target="tools.StepController" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.competition.CompetitionParameters" target="tools.ElapsedCpuTimer.TimerType" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.GameDescription.TerminationData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.SpriteNumberConstraint" target="tools.GameAnalyzer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.PullWithIt" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="155.49969670622022" y="2.1832674357692667" />
+      <point x="3440.256" y="2228.986" />
+      <point x="3440.256" y="2178.79" />
+      <point x="4104.151" y="2178.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.avatar.oriented.OngoingAvatar" target="ontology.avatar.oriented.OrientedAvatar" relationship="GENERALIZATION">
+      <point x="178.50006154988387" y="-7.466795459511104" />
+      <point x="3158.972" y="1946.79" />
+      <point x="3158.972" y="1926.0" />
+      <point x="3254.972" y="1926.0" />
+      <point x="-1.4517464751406806E-4" y="98.49962756270816" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.Agent" target="controllers.sampleOLMCTS.SingleMCTSPlayer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.olets.SingleMCTSPlayer" target="tools.Vector2d" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.GameDescription" target="core.game.GameDescription.TerminationData" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.olets.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="-4.946656663378235E-4" y="-41.00044901091405" />
+      <point x="6906.379" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.LevelGenerator" target="tools.GameAnalyzer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleonesteplookahead.Agent" target="controllers.Heuristics.SimpleStateHeuristic" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleGA.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="216.9998240367222" y="1.976347043637361E-4" />
+      <point x="4707.107" y="3117.987" />
+      <point x="4707.107" y="2235.0" />
+      <point x="5508.0" y="2235.0" />
+      <point x="5508.0" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="core.Node" target="core.content.MappingContent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.PathChaser" target="ontology.sprites.npc.RandomNPC" relationship="GENERALIZATION">
+      <point x="167.00024082875734" y="-2.4651282637933036E-4" />
+      <point x="5698.0" y="1119.238" />
+      <point x="5698.0" y="834.7180000000001" />
+      <point x="5735.422" y="834.7180000000001" />
+      <point x="34.18040680887407" y="98.49981004961205" />
+    </edge>
+    <edge source="core.ArcadeMachine" target="core.VGDLParser" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.RandomPathAltChaser" target="ontology.sprites.npc.PathAltChaser" relationship="GENERALIZATION">
+      <point x="-1.7313251849082008" y="-98.5" />
+      <point x="0.0" y="98.5" />
+    </edge>
+    <edge source="core.game.GameDescription.TerminationData" target="core.game.GameDescription" relationship="INNER_CLASS">
+      <point x="-3.110911675321404E-4" y="-41.000378511433155" />
+      <point x="-3.110911675321404E-4" y="218.50025893152224" />
+    </edge>
+    <edge source="core.game.ForwardModel" target="core.game.Game.Bucket" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.repeatOLETS.Agent" target="core.player.AbstractPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.missile.Walker" target="ontology.sprites.missile.Missile" relationship="GENERALIZATION">
+      <point x="3.1679666585660016E-4" y="75.49963181348767" />
+      <point x="382.824" y="1762.0" />
+      <point x="966.0" y="1762.0" />
+      <point x="966.0" y="1672.2199999999998" />
+      <point x="-154.49976732454002" y="3.392224753042683E-4" />
+    </edge>
+    <edge source="ontology.Types.ACTIONS" target="ontology.Types" relationship="INNER_CLASS">
+      <point x="-65.5002261311929" y="103.49953812123476" />
+      <point x="8656.652" y="4312.0" />
+      <point x="8722.152" y="4312.0" />
+      <point x="-2.2613119290326722E-4" y="26.999538121234764" />
+    </edge>
+    <edge source="tools.Utils" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.KillIfOtherHasMore" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-4.3835163978656055E-4" y="-41.00025683184458" />
+      <point x="4971.627" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="tools.KeyPulse" target="tools.KeyHandler" relationship="GENERALIZATION">
+      <point x="-106.00005947618047" y="5.1176942500915175" />
+      <point x="3933.771" y="2687.065" />
+      <point x="3933.771" y="2655.0" />
+      <point x="3810.271" y="2655.0" />
+      <point x="-3.619732760853367E-4" y="-100.99972644741047" />
+    </edge>
+    <edge source="controllers.Tester.SingleTreeNode" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.Tester.Agent" target="controllers.Tester.SingleMCTSPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelGenerator" target="levelGenerators.constructiveLevelGenerator.LevelData" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.PathAltChaser" target="tools.Vector2d" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="ontology.Types.ACTIONS" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.KillIfFrontal" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="2.5236239162040874E-4" y="40.99984603291796" />
+      <point x="7090.895" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="controllers.replayer.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="171.00032847398325" y="-3.1273374588636216E-5" />
+      <point x="5508.0" y="2076.889" />
+      <point x="5508.0" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="ontology.effects.binary.CollectResourceIfHeld" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="4.519648791756481E-4" y="-40.99958888943047" />
+      <point x="10234.755" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.sprites.npc.Chaser" target="tools.Vector2d" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLSprite" target="ontology.physics.ContinuousPhysics" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.AddTimer" target="ontology.effects.TimeEffect" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="tools.KeyHandler" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.KillIfNotFrontal" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-3.3366451589245116E-4" y="40.999891735712254" />
+      <point x="5878.433" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.physics.GravityPhysics" target="ontology.physics.ContinuousPhysics" relationship="GENERALIZATION">
+      <point x="-2.3383421648759395E-5" y="26.999565502682344" />
+      <point x="6705.473" y="1460.0" />
+      <point x="7086.659" y="1460.0" />
+      <point x="-2.7832138039229903E-4" y="64.00039070202888" />
+    </edge>
+    <edge source="controllers.Tester.Agent" target="ontology.Types.ACTIONS" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.Chaser" target="ontology.sprites.npc.RandomNPC" relationship="GENERALIZATION">
+      <point x="-154.49960042221483" y="-18.77143587927071" />
+      <point x="5735.422" y="834.7180000000001" />
+      <point x="34.18040680887407" y="98.49981004961205" />
+    </edge>
+    <edge source="core.game.ForwardModel" target="core.SpriteGroup" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.StepController" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.ForwardModel" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome.SpritePointData" target="levelGenerators.geneticLevelGenerator.Chromosome" relationship="INNER_CLASS">
+      <point x="114.0" y="0.0" />
+      <point x="-209.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.PathFinder" target="tools.pathfinder.Node" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.FlakAvatar" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.LevelGenerator" target="tools.LevelMapping" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleMCTS.Agent" target="ontology.Types.ACTIONS" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="tools.KeyPulse" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.TimeEffect" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="125.67640900739599" y="-109.99982010602389" />
+      <point x="137.658" y="1256.22" />
+      <point x="3573.26" y="1256.22" />
+      <point x="3573.26" y="1420.37" />
+      <point x="4032.879" y="1420.37" />
+      <point x="4032.879" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.game.Game" target="tools.Pair" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.KillIfFromAbove" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-3.4632346705620876E-4" y="40.99987710726509" />
+      <point x="6213.838" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.effects.binary.WallStop" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.learningmodel.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="-199.99963625498003" y="31.926721562674174" />
+      <point x="5508.0" y="1858.5" />
+      <point x="5508.0" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome" target="levelGenerators.geneticLevelGenerator.Chromosome.SpritePointData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.termination.Termination" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.Game.Bucket" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.Heuristics.SimpleStateHeuristic" target="controllers.Heuristics.StateHeuristic" relationship="GENERALIZATION">
+      <point x="140.0001469170502" y="-4.771591352437099E-4" />
+      <point x="1902.0" y="2438.768" />
+      <point x="1902.0" y="2451.523" />
+      <point x="-139.99997824651655" y="4.875661579717416E-5" />
+    </edge>
+    <edge source="controllers.Tester.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="-2.5646293761383276E-4" y="-52.500041748299736" />
+      <point x="7899.685" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="levelGenerators.constraints.GoalConstraint" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="-3.386767202613328E-4" y="-41.000158239755365" />
+      <point x="28.938000000000002" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="ontology.sprites.npc.PathChaser" target="tools.Vector2d" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelData" target="levelGenerators.constructiveLevelGenerator.LevelData.Point" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.RandomNPC" target="tools.Vector2d" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.randomLevelGenerator.LevelGenerator" target="tools.GameAnalyzer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.CloneSprite" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="2.1918035690760007E-4" y="-40.999551895274635" />
+      <point x="5375.634" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.ArcadeMachine" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.SpriteGroup" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.randomLevelGenerator.LevelGenerator" target="levelGenerators.randomLevelGenerator.LevelGenerator.DataPoint" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.SingleMCTSPlayer" target="controllers.sampleOLMCTS.SingleTreeNode" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelGenerator" target="tools.GameAnalyzer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.physics.ContinuousPhysics" target="ontology.physics.GridPhysics" relationship="GENERALIZATION">
+      <point x="202.0" y="0.0" />
+      <point x="7697.26223374456" y="1330.290609297971" />
+      <point x="0.0" y="-75.5" />
+    </edge>
+    <edge source="core.game.Game" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.WallStop" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-155.49979850203817" y="5.579938488153857E-5" />
+      <point x="7679.0" y="1894.2060000000001" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.sprites.producer.Bomber" target="ontology.sprites.producer.SpawnPoint" relationship="GENERALIZATION">
+      <point x="-157.99966248080705" y="3.5282021099192207E-4" />
+      <point x="1816.0" y="1778.8809999999999" />
+      <point x="1816.0" y="1643.574" />
+      <point x="168.00020696423417" y="-3.8961237214607536E-4" />
+    </edge>
+    <edge source="controllers.sampleMCTS.Agent" target="controllers.sampleMCTS.SingleMCTSPlayer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleMCTS.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="-8.686720957484795E-5" y="-52.49968707495054" />
+      <point x="4895.607" y="2235.0" />
+      <point x="5508.0" y="2235.0" />
+      <point x="5508.0" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="core.content.MappingContent" target="core.content.Content" relationship="GENERALIZATION">
+      <point x="96.9999024506742" y="-4.0722513222135603E-4" />
+      <point x="8812.0" y="1926.4229999999998" />
+      <point x="8812.0" y="2461.5" />
+      <point x="9086.0" y="2461.5" />
+      <point x="9086.0" y="2340.477" />
+      <point x="70.99996462839044" y="1.42161879921332E-5" />
+    </edge>
+    <edge source="levelGenerators.constraints.SolutionLengthConstraint" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="-119.49999642796683" y="-3.8115129427751526E-4" />
+      <point x="4061.4719999999998" y="2438.623" />
+      <point x="4061.4719999999998" y="2629.986" />
+      <point x="3599.418" y="2629.986" />
+      <point x="3599.418" y="2475.781" />
+      <point x="2560.792" y="2475.781" />
+      <point x="2560.792" y="2520.0" />
+      <point x="1884.5" y="2520.0" />
+      <point x="1884.5" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="core.game.GameDescription" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.olets.SingleMCTSPlayer" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome" target="core.player.AbstractPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.SpriteGroup" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome" target="tools.LevelMapping" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLSprite" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.BasicGame" target="core.game.Game" relationship="GENERALIZATION">
+      <point x="-1.5791630949024693E-4" y="86.99977551159054" />
+      <point x="3025.77" y="4602.0" />
+      <point x="2918.0" y="4602.0" />
+      <point x="2918.0" y="5570.787" />
+      <point x="-207.50047387442783" y="-1.6599142236373154E-4" />
+    </edge>
+    <edge source="levelGenerators.constraints.AvatarNumberConstraint" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="3.981265115271526E-4" y="41.000486126146825" />
+      <point x="1341.367" y="2520.0" />
+      <point x="1884.5" y="2520.0" />
+      <point x="1884.5" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="levelGenerators.constraints.WinConstraint" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="-97.50000231020294" y="-33.76281119002715" />
+      <point x="2607.018" y="2308.797" />
+      <point x="2607.018" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="ontology.avatar.MovingAvatar" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.PathAltChaser" target="ontology.sprites.npc.AlternateChaser" relationship="GENERALIZATION">
+      <point x="174.49954998913108" y="-1.6008515626708686E-4" />
+      <point x="5244.0" y="1274.884" />
+      <point x="5244.0" y="1158.884" />
+      <point x="5091.813" y="1158.884" />
+      <point x="6.610496438952396E-5" y="135.5000202320482" />
+    </edge>
+    <edge source="core.VGDLParser" target="tools.IO" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleFlatMCTS.Agent" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="tools.KeyInput" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.TransformToAll" target="ontology.effects.unary.TransformTo" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="-48.07444526007566" y="66.5" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelGenerator" target="levelGenerators.constructiveLevelGenerator.LevelData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.ForwardModel" target="core.game.Observation" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.randomLevelGenerator.LevelGenerator.DataPoint" target="levelGenerators.randomLevelGenerator.LevelGenerator" relationship="INNER_CLASS">
+      <point x="-92.5" y="11.093239189882752" />
+      <point x="225.0" y="-79.5" />
+    </edge>
+    <edge source="ontology.sprites.npc.AlternateChaser" target="tools.Vector2d" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleMCTS.SingleTreeNode" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.BasicGame" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.KillSprite" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="155.5002135534005" y="-7.535797353878024" />
+      <point x="3173.972" y="2095.808" />
+      <point x="3173.972" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.content.InteractionContent" target="core.content.Content" relationship="GENERALIZATION">
+      <point x="-142.50018820880723" y="4.993944376110449E-4" />
+      <point x="9086.0" y="2784.745" />
+      <point x="9086.0" y="2340.477" />
+      <point x="70.99996462839044" y="1.42161879921332E-5" />
+    </edge>
+    <edge source="core.game.StateObservation" target="core.game.ForwardModel" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.Node" target="core.content.Content" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.StepBack" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="2.6370305931777693E-5" y="-52.50008210614851" />
+      <point x="9380.701" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.game.GameDescription" target="core.game.Game" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.MovingAvatar" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.PathChaser" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.KeyInput" target="tools.KeyHandler" relationship="GENERALIZATION">
+      <point x="106.0000889741791" y="-0.9555027731062182" />
+      <point x="3584.418" y="2629.986" />
+      <point x="3584.418" y="2655.0" />
+      <point x="3810.271" y="2655.0" />
+      <point x="-3.619732760853367E-4" y="-100.99972644741047" />
+    </edge>
+    <edge source="core.VGDLFactory" target="ontology.effects.TimeEffect" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.physics.NoFrictionPhysics" target="ontology.physics.ContinuousPhysics" relationship="GENERALIZATION">
+      <point x="-4.000710514446837E-4" y="-26.999705050437797" />
+      <point x="7318.48" y="1460.0" />
+      <point x="7086.659" y="1460.0" />
+      <point x="-2.7832138039229903E-4" y="64.00039070202888" />
+    </edge>
+    <edge source="ontology.effects.binary.AddTimer" target="ontology.effects.Effect" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.Node" target="core.content.GameContent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleonesteplookahead.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="170.9999542051546" y="-34.032161253929644" />
+      <point x="5508.0" y="2721.493" />
+      <point x="5508.0" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="controllers.learningmodel.Agent" target="controllers.learningmodel.QPolicy" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.WallStop" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.PathFinder" target="tools.pathfinder.AStar" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleRandom.Agent" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.GameDescription.SpriteData" target="core.game.GameDescription" relationship="INNER_CLASS">
+      <point x="-3.110911675321404E-4" y="-41.000378511433155" />
+      <point x="8056.042" y="3485.0" />
+      <point x="7864.042" y="3485.0" />
+      <point x="-3.110911675321404E-4" y="218.50025893152224" />
+    </edge>
+    <edge source="core.VGDLViewer" target="core.player.AbstractPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.HorizontalAvatar" target="ontology.avatar.MovingAvatar" relationship="GENERALIZATION">
+      <point x="-183.00041646517593" y="-2.788829483506561E-4" />
+      <point x="3538.0" y="774.3320000000001" />
+      <point x="3538.0" y="1433.22" />
+      <point x="174.99977133809625" y="3.4976431697941734E-4" />
+    </edge>
+    <edge source="controllers.olets.Agent" target="controllers.olets.SingleMCTSPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLParser" target="core.content.SpriteContent" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.KillBoth" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="155.49987736305502" y="24.482358317862236" />
+      <point x="4104.151" y="2178.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.game.Game" target="ontology.effects.TimeEffect" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.PullWithIt" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="8.210616488213418E-5" y="-41.00024333854208" />
+      <point x="5698.903" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="controllers.olets.SingleMCTSPlayer" target="controllers.olets.SingleTreeNode" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.ResourcePack" target="ontology.sprites.Resource" relationship="GENERALIZATION">
+      <point x="0.0" y="-64.0" />
+      <point x="2423.994238820279" y="1795.8680715620353" />
+      <point x="2850.8998581112533" y="1795.8680715620353" />
+      <point x="0.0" y="87.0" />
+    </edge>
+    <edge source="ontology.effects.binary.BounceForward" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLSprite" target="ontology.physics.Physics" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.DeathConstraint" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="2.2733104287908645E-5" y="40.99985293700047" />
+      <point x="1750.751" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome" target="levelGenerators.constraints.CombinedConstraints" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.Conveyor" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="-2.7914151269214926E-4" y="-75.50042916007806" />
+      <point x="6405.288" y="-136.0" />
+      <point x="2973.0" y="-136.0" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.SingleTreeNode" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLParser" target="core.Node" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Event" target="tools.Vector2d" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.SharedData" target="tools.GameAnalyzer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLSprite" target="tools.Vector2d" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.oriented.MissileAvatar" target="ontology.avatar.oriented.OrientedAvatar" relationship="GENERALIZATION">
+      <point x="-1.0458793076395523E-4" y="-98.49951385896793" />
+      <point x="3515.756" y="1926.0" />
+      <point x="3254.972" y="1926.0" />
+      <point x="-1.4517464751406806E-4" y="98.49962756270816" />
+    </edge>
+    <edge source="ontology.effects.binary.CollectResource" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="82.1338683601607" y="-41.00006996519005" />
+      <point x="11927.661" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.ArcadeMachine" target="core.game.GameDescription" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.UndoAll" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="84.44648924982903" y="41.000099216619674" />
+      <point x="8858.974" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="controllers.sampleFlatMCTS.TreeNode" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.SpawnIfHasMore" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="10.85798119382514" y="-54.999826405147815" />
+      <point x="555.324" y="1271.22" />
+      <point x="3558.26" y="1271.22" />
+      <point x="3558.26" y="1921.788" />
+      <point x="4104.151" y="1921.788" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.GameDescription.InteractionData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.KeyPulse" target="tools.KeyPulse.Pulse" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.missile.RandomMissile" target="ontology.sprites.missile.Missile" relationship="GENERALIZATION">
+      <point x="-179.00024412824018" y="4.636497633327963E-4" />
+      <point x="966.0" y="1911.4009999999998" />
+      <point x="966.0" y="1672.2199999999998" />
+      <point x="-154.49976732454002" y="3.392224753042683E-4" />
+    </edge>
+    <edge source="ontology.sprites.missile.ErraticMissile" target="ontology.sprites.missile.Missile" relationship="GENERALIZATION">
+      <point x="172.99966572606627" y="1.6115128210003604E-4" />
+      <point x="966.0" y="1877.199" />
+      <point x="966.0" y="1672.2199999999998" />
+      <point x="-154.49976732454002" y="3.392224753042683E-4" />
+    </edge>
+    <edge source="core.game.BasicGame" target="tools.IO" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.randomLevelGenerator.LevelGenerator" target="core.generator.AbstractLevelGenerator" relationship="GENERALIZATION">
+      <point x="-225.00006059159023" y="-4.825284249818651E-4" />
+      <point x="10438.0" y="2200.227" />
+      <point x="10438.0" y="2095.727" />
+      <point x="10624.907" y="2095.727" />
+      <point x="5.023632547818124E-5" y="54.99971112300818" />
+    </edge>
+    <edge source="ontology.effects.binary.KillIfFrontal" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.Types.WINNER" target="ontology.Types" relationship="INNER_CLASS">
+      <point x="-2.2613119290326722E-4" y="-64.00046187876524" />
+      <point x="-2.2613119290326722E-4" y="26.999538121234764" />
+    </edge>
+    <edge source="ontology.effects.binary.BounceForward" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="155.5000196846895" y="2.6805655397765804E-4" />
+      <point x="4657.089" y="2323.557" />
+      <point x="4657.089" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.physics.ContinuousPhysics" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.producer.SpriteProducer" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="-8.805030165603966E-5" y="-75.50048652877513" />
+      <point x="2174.584" y="1120.0" />
+      <point x="2973.0" y="1120.0" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="core.game.Game.Bucket" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.GoalConstraint" target="core.game.GameDescription" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.Fleeing" target="ontology.sprites.npc.Chaser" relationship="GENERALIZATION">
+      <point x="0.0" y="-75.5" />
+      <point x="6655.943474195762" y="859.7184291600781" />
+      <point x="-154.5" y="6.2289932808073445" />
+    </edge>
+    <edge source="ontology.avatar.MovingAvatar" target="ontology.Types.MOVEMENT" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.AttractGaze" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-155.49987417088846" y="-3.6061455830349587E-6" />
+      <point x="1838.142" y="2054.278" />
+      <point x="1838.142" y="1271.22" />
+      <point x="3558.26" y="1271.22" />
+      <point x="3558.26" y="1921.788" />
+      <point x="4104.151" y="1921.788" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.sprites.producer.RandomBomber" target="ontology.sprites.producer.SpawnPoint" relationship="GENERALIZATION">
+      <point x="182.49989432029452" y="4.980733838237938E-4" />
+      <point x="1816.0" y="1976.5259999999998" />
+      <point x="1816.0" y="1643.574" />
+      <point x="168.00020696423417" y="-3.8961237214607536E-4" />
+    </edge>
+    <edge source="core.VGDLViewer" target="core.game.Game" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.Node" target="core.content.SpriteContent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="tools.WindowInput" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLSprite" target="ontology.physics.GravityPhysics" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.SingleMCTSPlayer" target="controllers.sampleOLMCTS.SingleTreeNode" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.SubtractHealthPoints" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="8.46103357616812E-5" y="-41.00018845398699" />
+      <point x="9908.726" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="levelGenerators.constraints.CombinedConstraints" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="-1.6702367065590806E-4" y="-66.49994189137533" />
+      <point x="768.073" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="core.game.Game" target="ontology.avatar.MovingAvatar" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.repeatOLETS.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="171.00030495263218" y="-3.905830094481644E-4" />
+      <point x="5508.0" y="2439.255" />
+      <point x="5508.0" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="core.game.Game" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.PathFinder" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleMCTS.SingleTreeNode" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.missile.Missile" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="2.3267545998351125E-4" y="-75.4996607775247" />
+      <point x="1168.772" y="1120.0" />
+      <point x="2973.0" y="1120.0" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="ontology.sprites.npc.AlternateChaser" target="ontology.sprites.npc.RandomNPC" relationship="GENERALIZATION">
+      <point x="180.5000661049644" y="2.0232048200341524E-5" />
+      <point x="5698.0" y="850.3030000000001" />
+      <point x="5698.0" y="834.7180000000001" />
+      <point x="5735.422" y="834.7180000000001" />
+      <point x="34.18040680887407" y="98.49981004961205" />
+    </edge>
+    <edge source="tools.KeyPulse.Pulse" target="tools.KeyPulse" relationship="INNER_CLASS">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="75.5" />
+    </edge>
+    <edge source="ontology.avatar.oriented.ShootAvatar" target="ontology.avatar.oriented.OrientedAvatar" relationship="GENERALIZATION">
+      <point x="-169.99973846992452" y="-1.4859288665984423" />
+      <point x="3058.972" y="1689.788" />
+      <point x="3058.972" y="1926.0" />
+      <point x="3254.972" y="1926.0" />
+      <point x="-1.4517464751406806E-4" y="98.49962756270816" />
+    </edge>
+    <edge source="tools.StepController" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.ArcadeMachine" target="tools.IO" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.learningmodel.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.ShieldFrom" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-155.4997663529757" y="3.9749270717948093E-4" />
+      <point x="11555.807" y="2587.509" />
+      <point x="11555.807" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.LevelGenerator" target="core.generator.AbstractLevelGenerator" relationship="GENERALIZATION">
+      <point x="294.50031057202614" y="-1.471924115321599E-4" />
+      <point x="10438.0" y="2664.413" />
+      <point x="10438.0" y="2095.727" />
+      <point x="10624.907" y="2095.727" />
+      <point x="5.023632547818124E-5" y="54.99971112300818" />
+    </edge>
+    <edge source="ontology.effects.unary.ReverseDirection" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="48.10282114663096" y="-40.999702686585806" />
+      <point x="9585.201" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.effects.unary.SpawnIfHasLess" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-4.8370155491284095E-4" y="-54.999732708962256" />
+      <point x="9010.593" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelGenerator" target="levelGenerators.constructiveLevelGenerator.LevelData.Point" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.AlternateChaser" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.learningmodel.Agent" target="controllers.Heuristics.WinScoreHeuristic" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="tools.Pair" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.FlipDirection" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-19.419060736690426" y="-40.99976291671646" />
+      <point x="1410.136" y="1271.22" />
+      <point x="3558.26" y="1271.22" />
+      <point x="3558.26" y="1921.788" />
+      <point x="4104.151" y="1921.788" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.effects.unary.StepBack" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleFlatMCTS.Agent" target="controllers.sampleFlatMCTS.TreeNode" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.KillIfHasMore" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-4.227953741064994E-5" y="41.00042814451763" />
+      <point x="4205.879" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.sprites.Passive" target="core.VGDLSprite" relationship="GENERALIZATION">
+      <point x="155.4999075394926" y="3.4098862306564115E-4" />
+      <point x="2973.0" y="1369.37" />
+      <point x="2973.0" y="299.54499999999996" />
+      <point x="-176.50032347833348" y="1.7703734727092524E-4" />
+    </edge>
+    <edge source="controllers.sampleFlatMCTS.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="170.99997506346153" y="4.3247626581432996E-4" />
+      <point x="8107.685" y="2589.435" />
+      <point x="8107.685" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.LevelGenerator" target="levelGenerators.constructiveLevelGenerator.LevelGenerator" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.human.Agent" target="core.player.AbstractPlayer" relationship="GENERALIZATION">
+      <point x="8.946153684519231E-5" y="-52.4995220923588" />
+      <point x="7477.771" y="2052.0" />
+      <point x="6225.547" y="2052.0" />
+      <point x="3.8590563326579286E-4" y="112.49987017079366" />
+    </edge>
+    <edge source="controllers.olets.SingleMCTSPlayer" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.LevelGenerator" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.ElapsedCpuTimer.TimerType" target="tools.ElapsedCpuTimer" relationship="INNER_CLASS">
+      <point x="100.5" y="0.0" />
+      <point x="-112.5" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.Chromosome" target="tools.ElapsedCpuTimer" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.VGDLSprite" target="ontology.physics.GridPhysics" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.oriented.OrientedAvatar" target="ontology.avatar.MovingAvatar" relationship="GENERALIZATION">
+      <point x="178.4998548253525" y="-3.724372918441077E-4" />
+      <point x="3538.0" y="1805.788" />
+      <point x="3538.0" y="1433.22" />
+      <point x="174.99977133809625" y="3.4976431697941734E-4" />
+    </edge>
+    <edge source="controllers.Tester.SingleMCTSPlayer" target="controllers.Tester.SingleTreeNode" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.FlakAvatar" target="ontology.avatar.HorizontalAvatar" relationship="GENERALIZATION">
+      <point x="0.0" y="-158.5" />
+      <point x="3752.7568701842283" y="789.3320000000001" />
+      <point x="-183.0" y="14.99972111705165" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.SingleTreeNode" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.Tester.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.content.TerminationContent" target="core.content.Content" relationship="GENERALIZATION">
+      <point x="-105.00016579003022" y="-4.470208759812522E-4" />
+      <point x="9086.0" y="2597.715" />
+      <point x="9086.0" y="2340.477" />
+      <point x="70.99996462839044" y="1.42161879921332E-5" />
+    </edge>
+    <edge source="ontology.sprites.producer.SpawnPoint" target="ontology.sprites.producer.SpriteProducer" relationship="GENERALIZATION">
+      <point x="2.069642341666622E-4" y="-112.50038961237215" />
+      <point x="1615.274" y="1503.0" />
+      <point x="2174.584" y="1503.0" />
+      <point x="-8.805030165603966E-5" y="75.49951347122487" />
+    </edge>
+    <edge source="ontology.sprites.producer.Portal" target="ontology.sprites.producer.SpriteProducer" relationship="GENERALIZATION">
+      <point x="-9.002309843708645E-5" y="-101.00007156203537" />
+      <point x="2466.278" y="1503.0" />
+      <point x="2174.584" y="1503.0" />
+      <point x="-8.805030165603966E-5" y="75.49951347122487" />
+    </edge>
+    <edge source="ontology.sprites.OrientedFlicker" target="ontology.sprites.Flicker" relationship="GENERALIZATION">
+      <point x="1.1504861959110713E-4" y="-86.99996859791008" />
+      <point x="4167.562" y="1064.0" />
+      <point x="4587.123" y="1064.0" />
+      <point x="-4.402779532028944E-4" y="87.00046789039175" />
+    </edge>
+    <edge source="ontology.effects.binary.TransformToSingleton" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-50.943857381197176" y="-66.5002595301462" />
+      <point x="987.4169999999999" y="1271.22" />
+      <point x="3558.26" y="1271.22" />
+      <point x="3558.26" y="1921.788" />
+      <point x="4104.151" y="1921.788" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.StateObservation" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.olets.SingleMCTSPlayer" target="tools.Vector2d" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.Spreader" target="ontology.sprites.Flicker" relationship="GENERALIZATION">
+      <point x="1.6096388208097778E-5" y="-112.50008752668577" />
+      <point x="4583.85" y="1064.0" />
+      <point x="4587.123" y="1064.0" />
+      <point x="-4.402779532028944E-4" y="87.00046789039175" />
+    </edge>
+    <edge source="core.game.Game" target="tools.JEasyFrame" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleRandom.Agent" target="core.game.Observation" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.content.GameContent" target="core.content.Content" relationship="GENERALIZATION">
+      <point x="-87.50022498644648" y="4.7513941308352514E-4" />
+      <point x="8812.0" y="2601.197" />
+      <point x="8812.0" y="2461.5" />
+      <point x="9086.0" y="2461.5" />
+      <point x="9086.0" y="2340.477" />
+      <point x="70.99996462839044" y="1.42161879921332E-5" />
+    </edge>
+    <edge source="ontology.sprites.npc.RandomInertial" target="ontology.sprites.npc.RandomNPC" relationship="GENERALIZATION">
+      <point x="-179.0000712821793" y="-1.670269443820871E-5" />
+      <point x="5698.0" y="1024.357" />
+      <point x="5698.0" y="834.7180000000001" />
+      <point x="5735.422" y="834.7180000000001" />
+      <point x="34.18040680887407" y="98.49981004961205" />
+    </edge>
+    <edge source="ontology.effects.unary.TurnAround" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="155.49978307311267" y="1.303929861933284E-4" />
+      <point x="7679.0" y="1736.3850000000002" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="controllers.sampleMCTS.SingleMCTSPlayer" target="controllers.sampleMCTS.SingleTreeNode" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleGA.Agent" target="controllers.Heuristics.WinScoreHeuristic" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.game.GameDescription.SpriteData" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.replayer.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.WinConstraint" target="ontology.Types.WINNER" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.CombinedConstraints" target="levelGenerators.constraints.AbstractConstraint" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.Game" target="core.content.SpriteContent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constructiveLevelGenerator.LevelGenerator" target="core.generator.AbstractLevelGenerator" relationship="GENERALIZATION">
+      <point x="-268.9998261211131" y="-1.1764976761696744E-4" />
+      <point x="10438.0" y="2392.339" />
+      <point x="10438.0" y="2095.727" />
+      <point x="10624.907" y="2095.727" />
+      <point x="5.023632547818124E-5" y="54.99971112300818" />
+    </edge>
+    <edge source="ontology.effects.unary.WrapAround" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="-4.563132824841887E-5" y="40.99980517729318" />
+      <point x="9070.316" y="1810.0" />
+      <point x="7679.0" y="1810.0" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="levelGenerators.constraints.DeathConstraint" target="ontology.Types.WINNER" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.StepController" target="core.player.AbstractPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.game.GameDescription" target="core.game.GameDescription.SpriteData" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleMCTS.Agent" target="ontology.Types.ACTIONS" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.GameAnalyzer.InteractionType" target="tools.GameAnalyzer" relationship="INNER_CLASS">
+      <point x="-115.0" y="0.0" />
+      <point x="279.0" y="0.0" />
+    </edge>
+    <edge source="controllers.Tester.SingleMCTSPlayer" target="controllers.Tester.SingleTreeNode" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.StepController" target="core.game.StateObservation" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.SpriteNumberConstraint" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="7.364398697973229E-6" y="41.000485511203806" />
+      <point x="2427.792" y="2520.0" />
+      <point x="1884.5" y="2520.0" />
+      <point x="1884.5" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="controllers.repeatOLETS.Agent" target="tools.IO" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.avatar.MovingAvatar" target="core.player.AbstractPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.constraints.CoverPercentageConstraint" target="levelGenerators.constraints.AbstractConstraint" relationship="GENERALIZATION">
+      <point x="-7.916799495433224E-5" y="41.00035407999485" />
+      <point x="3397.539" y="2409.921" />
+      <point x="2579.975" y="2409.921" />
+      <point x="2579.975" y="2355.0" />
+      <point x="2077.965" y="2355.0" />
+      <point x="1.6421185455328668E-4" y="54.99979612444258" />
+    </edge>
+    <edge source="ontology.effects.binary.TeleportToExit" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="155.50028624680454" y="-2.817679805957596E-4" />
+      <point x="7679.0" y="1993.9479999999999" />
+      <point x="7679.0" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="ontology.sprites.npc.RandomAltChaser" target="ontology.sprites.npc.AlternateChaser" relationship="GENERALIZATION">
+      <point x="-186.50019618541592" y="8.930624926506425E-5" />
+      <point x="5244.0" y="1485.749" />
+      <point x="5244.0" y="1158.884" />
+      <point x="5091.813" y="1158.884" />
+      <point x="6.610496438952396E-5" y="135.5000202320482" />
+    </edge>
+    <edge source="core.VGDLParser" target="core.game.Game" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.Node" target="core.content.TerminationContent" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="tools.pathfinder.Agent" target="tools.pathfinder.PathFinder" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="core.content.SpriteContent" target="core.content.Content" relationship="GENERALIZATION">
+      <point x="5.217513535171747E-5" y="75.49973403157901" />
+      <point x="8711.474" y="1795.0" />
+      <point x="8812.0" y="1795.0" />
+      <point x="8812.0" y="2461.5" />
+      <point x="9086.0" y="2461.5" />
+      <point x="9086.0" y="2340.477" />
+      <point x="70.99996462839044" y="1.42161879921332E-5" />
+    </edge>
+    <edge source="ontology.sprites.producer.SpawnPoint" target="tools.Vector2d" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.sprites.npc.Chaser" target="core.VGDLSprite" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.unary.Spawn" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="100.42192127632825" y="-54.999827086908226" />
+      <point x="4005.5" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="controllers.sampleOLMCTS.Agent" target="controllers.sampleOLMCTS.SingleMCTSPlayer" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.ChangeResource" target="ontology.effects.Effect" relationship="GENERALIZATION">
+      <point x="110.34911308773371" y="40.99950464372205" />
+      <point x="4387.5" y="2273.0" />
+      <point x="4478.892" y="2273.0" />
+      <point x="4478.892" y="1946.79" />
+      <point x="4104.151" y="1946.79" />
+      <point x="4104.151" y="1731.0" />
+      <point x="6386.838" y="1731.0" />
+      <point x="115.17872287749651" y="78.00012929491618" />
+    </edge>
+    <edge source="core.game.ForwardModel" target="core.game.Game" relationship="GENERALIZATION">
+      <point x="217.999975631712" y="4.884905420112773E-4" />
+      <point x="2918.0" y="3884.952" />
+      <point x="2918.0" y="5570.787" />
+      <point x="-207.50047387442783" y="-1.6599142236373154E-4" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.LevelGenerator" target="levelGenerators.geneticLevelGenerator.Chromosome" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ontology.effects.binary.AddTimer" target="ontology.effects.TimeEffect" relationship="GENERALIZATION">
+      <point x="-155.5" y="0.0" />
+      <point x="11.981590992603998" y="2523.0520267690817" />
+      <point x="0.0" y="110.0" />
+    </edge>
+    <edge source="tools.KeyPulse" target="tools.KeyPulse.Pulse" relationship="TO_MANY">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.sampleFlatMCTS.Agent" target="ontology.Types.ACTIONS" relationship="CREATE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="levelGenerators.geneticLevelGenerator.SharedData" target="levelGenerators.constructiveLevelGenerator.LevelGenerator" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="controllers.learningmodel.Agent" target="controllers.learningmodel.QPolicy" relationship="TO_ONE">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.12335054503729204" showDependencies="true" x="5974.5" y="3288.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

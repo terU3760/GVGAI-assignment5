@@ -1,0 +1,1640 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+enum ACTIONS << enumeration >> {
+  - ACTIONS(int[]): 
+  - key: int[]
+  + valueOf(String): ACTIONS
+  + fromString(String): ACTIONS
+  + fromVector(Vector2d): ACTIONS
+  + values(): ACTIONS[]
+   key: int[]
+}
+class AStar {
+  + AStar(PathFinder): 
+  + findPath(Node, Node): ArrayList<Node>
+  - _dijkstraa(Node): void
+  - calculatePath(Node): ArrayList<Node>
+  - uncompressPathId(int): int[][]
+  + printPath(int, ArrayList<Node>): void
+  - _findPath(Node, Node): ArrayList<Node>?
+  + emptyCache(): void
+  - heuristicEstimatedCost(Node, Node): double
+  + getPath(Node, Node): ArrayList<Node>
+}
+class AbstractConstraint {
+  + AbstractConstraint(): 
+  + checkConstraint(): double
+   parameters: HashMap<String, Object>
+}
+class AbstractLevelGenerator {
+  + AbstractLevelGenerator(): 
+  + generateLevel(GameDescription, ElapsedCpuTimer): String
+   levelMapping: HashMap<Character, ArrayList<String>>
+}
+class AbstractPlayer {
+  + AbstractPlayer(): 
+  + logAction(ACTIONS): void
+  + draw(Graphics2D): void
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+  + teardown(): void
+  + result(StateObservation, ElapsedCpuTimer): void
+  + setup(String, int): void
+   lastAction: ACTIONS
+}
+class AddHealthPoints {
+  + AddHealthPoints(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class AddTimer {
+  + AddTimer(InteractionContent): 
+  + AddTimer(): 
+  + copyTo(TimeEffect): void
+  + execute(VGDLSprite, VGDLSprite, Game): void
+  + copy(): TimeEffect
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+  + result(StateObservation, ElapsedCpuTimer): void
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  - learnPolicy(StateObservation, int, StateHeuristic): void
+  - simulate(StateObservation, StateHeuristic, QPolicy): Instances
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+  + result(StateObservation, ElapsedCpuTimer): void
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+  + draw(Graphics2D): void
+  - printDebug(ArrayList<Observation>[], String): void
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  - actions: ArrayList<ACTIONS>
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+   actions: ArrayList<ACTIONS>
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  - getNextEmpericalDist(ArrayList<Double>): int
+  - getCDF(ArrayList<Double>): ArrayList<Double>
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  ~ microbial_tournament(int[][], StateObservation, StateHeuristic): double
+  - initGenome(StateObservation): void
+  + draw(Graphics2D): void
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+  - simulate(StateObservation, StateHeuristic, int[]): double
+  - microbial(StateObservation, int, StateHeuristic, int): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+  - compareStates(StateObservation, StateObservation): void
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+}
+class Agent {
+  + Agent(StateObservation, ElapsedCpuTimer): 
+  + act(StateObservation, ElapsedCpuTimer): ACTIONS
+  + getPlayer(StateObservation, ElapsedCpuTimer): SingleMCTSPlayer
+}
+class AgentExecutor {
+  + AgentExecutor(): 
+  + main(String[]): void
+}
+class AlternateChaser {
+  + AlternateChaser(Vector2d, Dimension, SpriteContent): 
+  + AlternateChaser(): 
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+  # movesToward(VGDLSprite): void
+  # loadDefaults(): void
+  + postProcess(): void
+  # closestTargets(Game): void
+  + update(Game): void
+   dependentSprites: ArrayList<String>
+}
+class ArcadeMachine {
+  + ArcadeMachine(): 
+  + generateLevels(String, String, String[]): void
+  # createLevelGenerator(String, GameDescription): AbstractLevelGenerator
+  # createController(String, StateObservation): AbstractPlayer
+  + loadGeneratedFile(Game, String): String
+  - createPlayer(String, String, StateObservation, int): AbstractPlayer
+  + playOneGeneratedLevel(String, String, String, int): double
+  + generateOneLevel(String, String, String): boolean
+  + runGames(String, String[], int, String, String[]): void
+  + runOneGame(String, String, boolean, String, String, int, boolean): double
+  - getGeneratedLevel(GameDescription, Game, AbstractLevelGenerator): String
+  + playOneGame(String, String, String, int): double
+  + replayGame(String, String, boolean, String): double
+  - saveLevel(String, String, HashMap<Character, ArrayList<String>>): void
+  + runOneGeneratedLevel(String, boolean, String, String, String, int, boolean): double
+  + warmUp(Game, long): void
+  - tearPlayerDown(Game, AbstractPlayer): boolean
+  + playGeneratedLevels(String, String[], String[], boolean): void
+}
+class Assignment4 {
+  + Assignment4(): 
+  + main(String[]): void
+}
+class AttractGaze {
+  + AttractGaze(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class AvatarNumberConstraint {
+  + AvatarNumberConstraint(): 
+  + checkConstraint(): double
+}
+class BasicGame {
+  + BasicGame(GameContent): 
+  # parseParameters(GameContent): void
+  - completeLine(String, int, String): String
+  + buildStringLevel(String[]): void
+  + buildLevel(String): void
+  + addSpritesIn(ArrayList<String>, Vector2d): void
+}
+class Bomber {
+  + Bomber(Vector2d, Dimension, SpriteContent): 
+  + Bomber(): 
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+}
+class BounceForward {
+  + BounceForward(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class Bucket {
+  + Bucket(): 
+  ~ allSprites: ArrayList<VGDLSprite>
+  + add(VGDLSprite): void
+  + size(): int
+  + clear(): void
+  + size(int): int
+   allSprites: ArrayList<VGDLSprite>
+   spriteList: TreeMap<Integer, ArrayList<VGDLSprite>>
+}
+class ChangeResource {
+  + ChangeResource(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class Chaser {
+  + Chaser(Vector2d, Dimension, SpriteContent): 
+  + Chaser(): 
+  # movesToward(VGDLSprite): void
+  + update(Game): void
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+  # closestTargets(Game): void
+  + postProcess(): void
+   dependentSprites: ArrayList<String>
+}
+class Chromosome {
+  + Chromosome(int, int): 
+  - fitness: ArrayList<Double>
+  - constrainFitness: double
+  + calculateFitness(long): ArrayList<Double>
+  - FixLevel(): void
+  - FixPlayer(): void
+  + InitializeConstructive(): void
+  + clone(): Chromosome
+  + crossOver(Chromosome): ArrayList<Chromosome>
+  + InitializeRandom(): void
+  - constructAgent(): void
+  + getLevelString(LevelMapping): String
+  - getPositions(ArrayList<String>): ArrayList<SpritePointData>
+  - getNaivePlayerResult(StateObservation, int, AbstractPlayer): int
+  + compareTo(Chromosome): int
+  + mutate(): void
+  - getGameScore(double, double): double
+  - calculateNumberOfObjects(): HashMap<String, Integer>
+  - getUniqueRuleScore(StateObservation, double): double
+  - getFreePositions(ArrayList<String>): ArrayList<SpritePointData>
+   coverPercentage: double
+   playerCauseDeath: boolean
+   stateObservation: StateObservation
+   combinedFitness: double
+   levelMapping: LevelMapping
+   constrainFitness: double
+   fitness: ArrayList<Double>
+}
+class CloneSprite {
+  + CloneSprite(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class CollectResource {
+  + CollectResource(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class CollectResourceIfHeld {
+  + CollectResourceIfHeld(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class CombinedConstraints {
+  + CombinedConstraints(): 
+  + checkConstraint(): double
+  + addConstraints(String[]): void
+   parameters: HashMap<String, Object>
+}
+class CompetitionParameters {
+  + CompetitionParameters(): 
+}
+class Content {
+  + Content(): 
+  + toString(): String
+}
+class ContinuousPhysics {
+  + ContinuousPhysics(): 
+  + passiveMovement(VGDLSprite): MOVEMENT
+  + distance(Rectangle, Rectangle): double
+  + activeMovement(VGDLSprite, Vector2d, double): MOVEMENT
+}
+class Conveyor {
+  + Conveyor(): 
+  + Conveyor(Vector2d, Dimension, SpriteContent): 
+  # loadDefaults(): void
+  + copyTo(VGDLSprite): void
+  + copy(): VGDLSprite
+}
+class CoverPercentageConstraint {
+  + CoverPercentageConstraint(): 
+  + checkConstraint(): double
+}
+class DataPoint {
+  + DataPoint(int, int, char): 
+}
+class DeathConstraint {
+  + DeathConstraint(): 
+  + checkConstraint(): double
+}
+class Door {
+  + Door(): 
+  + Door(Vector2d, Dimension, SpriteContent): 
+  + postProcess(): void
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+}
+class Effect {
+  + Effect(): 
+  + setStochastic(): void
+  + parseParameters(InteractionContent): void
+  + execute(VGDLSprite, VGDLSprite, Game): void
+   effectSprites: ArrayList<String>
+}
+class ElapsedCpuTimer {
+  + ElapsedCpuTimer(): 
+  + ElapsedCpuTimer(TimerType): 
+  + elapsedSeconds(): double
+  + elapsedHours(): double
+  + toString(): String
+  + elapsedMillis(): long
+  + elapsedMinutes(): double
+  + exceededMaxTime(): boolean
+  + elapsed(): long
+  + remainingTimeMillis(): long
+  + elapsedNanos(): long
+  + copy(): ElapsedCpuTimer
+   time: long
+   wallTime: long
+   maxTimeMillis: long
+   userTime: long
+   cpuTime: long
+}
+class ErraticMissile {
+  + ErraticMissile(Vector2d, Dimension, SpriteContent): 
+  + ErraticMissile(): 
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+}
+class Event {
+  + Event(int, boolean, int, int, int, int, Vector2d): 
+  + copy(): Event
+  + equals(Object): boolean
+  + compareTo(Event): int
+}
+class FlakAvatar {
+  + FlakAvatar(Vector2d, Dimension, SpriteContent): 
+  + FlakAvatar(): 
+  + copy(): VGDLSprite
+  # loadDefaults(): void
+  + update(Game): void
+  - hasAmmo(): boolean
+  + move(Game, boolean[]): void
+  + postProcess(): void
+  + copyTo(VGDLSprite): void
+  + updateUse(Game): void
+  - reduceAmmo(): void
+   dependentSprites: ArrayList<String>
+}
+class Fleeing {
+  + Fleeing(Vector2d, Dimension, SpriteContent): 
+  + Fleeing(): 
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+}
+class Flicker {
+  + Flicker(): 
+  + Flicker(Vector2d, Dimension, SpriteContent): 
+  + update(Game): void
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+}
+class FlipDirection {
+  + FlipDirection(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class ForwardModel {
+  + ForwardModel(Game): 
+  - observationGrid: ArrayList<Observation>[][]
+  - addObservationToGrid(Observation, Vector2d): void
+  + getAvatarActions(boolean): ArrayList<ACTIONS>
+  - getSpriteObservation(VGDLSprite): Observation
+  + getFromAvatarSpPositions(Vector2d): ArrayList<Observation>[]
+  + copy(): ForwardModel
+  + getPortalsPositions(Vector2d): ArrayList<Observation>[]
+  - createSpriteObservation(VGDLSprite): Observation
+  - getSpriteCategory(VGDLSprite): int
+  + advance(ACTIONS): void
+  + removeSpriteObservation(VGDLSprite): void
+  - updateAllObservations(): void
+  - checkSpriteFeatures(VGDLSprite, int): void
+  - init(): void
+  + getImmovablePositions(Vector2d): ArrayList<Observation>[]
+  + equalObservations(ForwardModel): boolean
+  + getMovablePositions(Vector2d): ArrayList<Observation>[]
+  + update(Game): void
+  - updateObservation(VGDLSprite): void
+  - initNonVolatile(Game): void
+  - getPositionsFrom(boolean[], Vector2d): ArrayList<Observation>[]?
+  + getResourcesPositions(Vector2d): ArrayList<Observation>[]
+  + buildStringLevel(String[]): void
+  - removeObservationFromGrid(Observation, Vector2d): void
+  + printObservationGrid(): void
+  # tick(ACTIONS): void
+  - updateGrid(Observation, boolean, boolean, Vector2d): void
+  + getNPCPositions(Vector2d): ArrayList<Observation>[]
+   avatarOrientation: Vector2d
+   avatarPosition: Vector2d
+   gameOver: boolean
+   avatarResources: HashMap<Integer, Integer>
+   avatarSpeed: double
+   newSeed: int
+   eventsHistory: TreeSet<Event>
+   worldDimension: Dimension
+   gameScore: double
+   randomGenerator: Random
+   gameWinner: WINNER
+   observationGrid: ArrayList<Observation>[][]
+   avatarMaxHealthPoints: int
+   avatarHealthPoints: int
+   avatarLastAction: ACTIONS
+   avatarLimitHealthPoints: int
+   gameTick: int
+   avatarType: int
+}
+class GVGAI {
+  + GVGAI(): 
+  + main(String[]): void
+}
+class Game {
+  + Game(): 
+  # winner: WINNER
+  # definedEffects: ArrayList<Pair<Integer, Integer>>
+  # avatar: MovingAvatar
+  # charMapping: HashMap<Character, ArrayList<String>>
+  # screenSize: Dimension
+  # spriteOrder: int[]
+  # gameTick: int
+  # terminations: ArrayList<Termination>
+  # avatarLastAction: ACTIONS
+  + runGame(AbstractPlayer, int): double
+  - assignPlayer(AbstractPlayer): void
+  # eventHandling(): void
+  - isAtEdge(Rectangle): boolean
+  + getCollisionEffects(int, int): ArrayList<Effect>
+  + addShield(int, int, long): void
+  + getInteractionData(int, int): ArrayList<InteractionData>
+  - addEvent(VGDLSprite, VGDLSprite): void
+  - resetShieldEffects(): void
+  + addSprite(SpriteContent, Vector2d, int, boolean): VGDLSprite
+  + handleResult(): double
+  + disqualify(): void
+  # clearAll(ForwardModel): void
+  + initSprites(ArrayList<Integer>, ArrayList<Integer>, HashMap<Integer, SpriteContent>): void
+  - loadDefaultConstr(): void
+  - getSpriteCategory(VGDLSprite): int
+  + buildLevel(String): void
+  + _updateCollisionDict(VGDLSprite): void
+  + addTimeEffect(TimeEffect): void
+  - gameCycle(): void
+  - executeEffect(Effect, VGDLSprite, VGDLSprite): void
+  + killSprite(VGDLSprite): void
+  + getSpriteGroup(int): Iterator<VGDLSprite>
+  # checkTimeOut(): void
+  # terminationHandling(): void
+  - prepareGame(AbstractPlayer, int): void
+  + getNumSprites(int): int
+  + buildStringLevel(String[]): void
+  - isLeafNode(int): boolean
+  - initializeSpriteData(SpriteContent): SpriteData
+  + reset(): void
+  + getSprites(int): ConcurrentHashMap<Integer, VGDLSprite>
+  + playGame(AbstractPlayer, int, boolean): double
+  + addSprite(int, Vector2d): VGDLSprite
+  # parseParameters(GameContent): void
+  + getTempAvatar(SpriteData): VGDLSprite
+  - parentNodes(int): ArrayList<Integer>
+  ~ waitStep(int): void
+  + getEosEffects(int): ArrayList<Effect>
+  - expandNonLeafNode(int): ArrayList<String>
+  # tick(): void
+  # addSprite(VGDLSprite, int): void
+  - printResult(): void
+  + addSprite(int, Vector2d, boolean): VGDLSprite
+  + getResourceColor(int): Color
+  + getPath(Vector2d, Vector2d): ArrayList<Node>
+  + getResourceLimit(int): int
+  + reverseDirection(VGDLSprite): void
+  + initForwardModel(): void
+  + getSubSpritesGroup(int): Iterator<VGDLSprite>
+   spriteData: ArrayList<SpriteData>
+   gameOver: boolean
+   definedEffects: ArrayList<Pair<Integer, Integer>>
+   definedEosEffects: ArrayList<Integer>
+   terminations: ArrayList<Termination>
+   blockSize: int
+   avatar: MovingAvatar
+   title: JEasyFrame
+   randomGenerator: Random
+   charMapping: HashMap<Character, ArrayList<String>>
+   winner: WINNER
+   spriteOrder: int[]
+   observation: StateObservation
+   stochastic: boolean
+   terminationData: ArrayList<TerminationData>
+   screenSize: Dimension
+   avatarLastAction: ACTIONS
+   gameTick: int
+}
+class GameAnalyzer {
+  + GameAnalyzer(GameDescription): 
+  - avatarSprites: ArrayList<String>
+  - collectableSprites: ArrayList<String>
+  - otherSprites: ArrayList<String>
+  - goalSprites: ArrayList<String>
+  - harmfulSprites: ArrayList<String>
+  - minScoreUnit: double
+  - solidSprites: ArrayList<String>
+  - maxScoreUnit: double
+  - calculateMinRequiredNumber(GameDescription): void
+  - findCollectableSprites(GameDescription): void
+  - findAvatarObjects(GameDescription): void
+  - findSolidObjects(GameDescription): void
+  - findHarmfulSprites(GameDescription): void
+  - checkIsCreate(String, GameDescription, ArrayList<SpriteData>): boolean
+  - getAllInteractions(String, InteractionType, GameDescription): ArrayList<InteractionData>
+  - findOtherSprites(GameDescription): void
+  - calculateMinMaxScoreUnit(GameDescription): void
+  - calculatePriorityValues(GameDescription): void
+  - removeUselessObjects(GameDescription): void
+  + getPriorityNumber(String): int
+  + checkIfSpawned(String): int
+  - findGoalSprites(GameDescription): void
+   otherSprites: ArrayList<String>
+   minScoreUnit: double
+   maxScoreUnit: double
+   collectableSprites: ArrayList<String>
+   harmfulSprites: ArrayList<String>
+   goalSprites: ArrayList<String>
+   avatarSprites: ArrayList<String>
+   solidSprites: ArrayList<String>
+}
+class GameContent {
+  + GameContent(): 
+  + GameContent(String): 
+}
+class GameDescription {
+  + GameDescription(Game): 
+  - avatar: ArrayList<SpriteData>
+  + testLevel(String, HashMap<Character, ArrayList<String>>): StateObservation
+  + testLevel(String): StateObservation
+  + getAvailableActions(boolean): ArrayList<ACTIONS>
+  - checkHaveInteraction(String): boolean
+  + reset(Game): void
+  + getInteraction(String, String): ArrayList<InteractionData>
+   terminationConditions: ArrayList<TerminationData>
+   allSpriteData: ArrayList<SpriteData>
+   NPC: ArrayList<SpriteData>
+   static: ArrayList<SpriteData>
+   resource: ArrayList<SpriteData>
+   levelMapping: HashMap<Character, ArrayList<String>>
+   moving: ArrayList<SpriteData>
+   avatar: ArrayList<SpriteData>
+   portal: ArrayList<SpriteData>
+}
+class GoalConstraint {
+  + GoalConstraint(): 
+  + checkConstraint(): double
+}
+class GravityPhysics {
+  + GravityPhysics(): 
+}
+class GridPhysics {
+  + GridPhysics(): 
+  + GridPhysics(Dimension): 
+  + activeMovement(VGDLSprite, Vector2d, double): MOVEMENT
+  + distance(Rectangle, Rectangle): double
+  + passiveMovement(VGDLSprite): MOVEMENT
+}
+class HorizontalAvatar {
+  + HorizontalAvatar(Vector2d, Dimension, SpriteContent): 
+  + HorizontalAvatar(): 
+  # loadDefaults(): void
+  + update(Game): void
+  + move(Game, boolean[]): void
+  + copyTo(VGDLSprite): void
+  + postProcess(): void
+  + copy(): VGDLSprite
+}
+class HumanPlay {
+  + HumanPlay(): 
+  + main(String[]): void
+}
+class IO {
+  + IO(): 
+  + readFile(String): String[]
+}
+class Immovable {
+  + Immovable(Vector2d, Dimension, SpriteContent): 
+  + Immovable(): 
+  # loadDefaults(): void
+  + postProcess(): void
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+}
+class InteractionContent {
+  + InteractionContent(String): 
+  + InteractionContent(): 
+  + InteractionContent(String, String, String): 
+}
+class InteractionData {
+  + InteractionData(): 
+  + toString(): String
+}
+enum InteractionType << enumeration >> {
+  + InteractionType(): 
+  + values(): InteractionType[]
+  + valueOf(String): InteractionType
+}
+class JEasyFrame {
+  + JEasyFrame(Component, String): 
+  + quit(): void
+}
+class KeyHandler {
+  + KeyHandler(): 
+  + keyReleased(KeyEvent): void
+  + setMask(): void
+  + reset(): void
+  + keyPressed(KeyEvent): void
+   action: ACTIONS
+   mask: boolean[]
+}
+class KeyInput {
+  + KeyInput(): 
+  + keyPressed(KeyEvent): void
+  + keyReleased(KeyEvent): void
+}
+class KeyPulse {
+  + KeyPulse(): 
+  + setMask(): void
+  + keyReleased(KeyEvent): void
+  - poll(): void
+  + keyPressed(KeyEvent): void
+}
+class KillBoth {
+  + KillBoth(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class KillIfFromAbove {
+  + KillIfFromAbove(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class KillIfFrontal {
+  + KillIfFrontal(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class KillIfHasLess {
+  + KillIfHasLess(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class KillIfHasMore {
+  + KillIfHasMore(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class KillIfNotFrontal {
+  + KillIfNotFrontal(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class KillIfOtherHasMore {
+  + KillIfOtherHasMore(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class KillSprite {
+  + KillSprite(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class LevelCoverData {
+  + LevelCoverData(): 
+}
+class LevelData {
+  + LevelData(int, int): 
+  - level: String[][]
+  - levelMapping: HashMap<String, Character>
+  + set(int, int, String): void
+  + checkConnectivity(int, int, int, int): boolean
+  + checkConnectivity(int, int): boolean
+  + get(int, int): String
+  + checkInLevel(int, int): boolean
+   levelMapping: HashMap<Character, ArrayList<String>>
+   level: String
+   allFreeSpots: ArrayList<Point>
+   height: int
+   width: int
+}
+class LevelGenerator {
+  + LevelGenerator(GameDescription, ElapsedCpuTimer): 
+  - constraintRouletteWheelSelection(ArrayList<Chromosome>): Chromosome
+  - rouletteWheelSelection(ArrayList<Chromosome>): Chromosome
+  + generateLevel(GameDescription, ElapsedCpuTimer): String
+  - getNextPopulation(ArrayList<Chromosome>, ArrayList<Chromosome>): ArrayList<Chromosome>
+   levelMapping: HashMap<Character, ArrayList<String>>
+}
+class LevelGenerator {
+  + LevelGenerator(GameDescription, ElapsedCpuTimer): 
+  - calculateNumberOfObjects(GameDescription, LevelData): HashMap<String, Integer>
+  - addCollectableObjects(GameDescription, LevelData, LevelCoverData): void
+  - placeSolid(LevelData, int, int, String): boolean
+  - getPercentagesCovered(GameDescription): LevelCoverData
+  - fixGoals(GameDescription, LevelData, LevelCoverData): void
+  - getUpperLowerPoints(ArrayList<Point>): ArrayList<Point>
+  - addHarmfulObjects(GameDescription, LevelData, LevelCoverData, Point): void
+  - addAvatar(LevelData, GameDescription): Point
+  - addOtherObjects(GameDescription, LevelData, LevelCoverData): void
+  - getFarLocation(ArrayList<Point>, Point): int
+  - getArea(LevelData): double
+  + generateLevel(GameDescription, ElapsedCpuTimer): String
+  - buildLevelLayout(LevelData, LevelCoverData): void
+  - isMoving(GameDescription, String): boolean
+  + generateLevel(GameDescription, ElapsedCpuTimer, int, int): String
+   levelMapping: HashMap<Character, ArrayList<String>>
+}
+class LevelGenerator {
+  + LevelGenerator(GameDescription, ElapsedCpuTimer): 
+  - buildLayout(GameDescription, ArrayList<DataPoint>, int, int): boolean
+  - addUnique(ArrayList<DataPoint>, int, int, char): void
+  - isUnique(ArrayList<DataPoint>, int, int): DataPoint?
+  + generateLevel(GameDescription, ElapsedCpuTimer): String
+  - getSolidCharacter(GameDescription): Character
+}
+class LevelMapping {
+  + LevelMapping(GameDescription, HashMap<Character, ArrayList<String>>): 
+  + LevelMapping(GameDescription): 
+  - charMapping: HashMap<Long, Character>
+  + addCharacterMapping(Character, ArrayList<String>): void
+  - hashValueFunction(ArrayList<String>): long
+  - reverseHash(long): ArrayList<String>
+  + getArrayList(Character): ArrayList<String>
+  + getCharacter(ArrayList<String>): Character
+  + clearLevelMapping(): void
+   charMapping: HashMap<Character, ArrayList<String>>
+}
+enum MOVEMENT << enumeration >> {
+  + MOVEMENT(): 
+  + valueOf(String): MOVEMENT
+  + values(): MOVEMENT[]
+}
+class MappingContent {
+  + MappingContent(): 
+  + MappingContent(String): 
+}
+class Missile {
+  + Missile(Vector2d, Dimension, SpriteContent): 
+  + Missile(): 
+  # loadDefaults(): void
+  + copyTo(VGDLSprite): void
+  + copy(): VGDLSprite
+}
+class MissileAvatar {
+  + MissileAvatar(): 
+  + MissileAvatar(Vector2d, Dimension, SpriteContent): 
+  + update(Game): void
+  + move(Game, boolean[]): void
+  # loadDefaults(): void
+  + copyTo(VGDLSprite): void
+  + copy(): VGDLSprite
+}
+class MovingAvatar {
+  + MovingAvatar(): 
+  + MovingAvatar(Vector2d, Dimension, SpriteContent): 
+  + update(Game): void
+  # requestPlayerInput(Game): void
+  # loadDefaults(): void
+  + postProcess(): void
+  + move(Game, boolean[]): void
+  + updateUse(Game): void
+  - applyMovement(Game, Vector2d): void
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+}
+class MultiSpriteCounter {
+  + MultiSpriteCounter(TerminationContent): 
+  + MultiSpriteCounter(): 
+  + isDone(Game): boolean
+   terminationSprites: ArrayList<String>
+}
+class NoFrictionPhysics {
+  + NoFrictionPhysics(): 
+}
+class Node {
+  + Node(String, int, Node, int): 
+  + insert(Node): void
+  + toString(): String
+  - createContent(String, int): Content?
+   root: Node
+}
+class Node {
+  + Node(Vector2d): 
+  + equals(Object): boolean
+  + compareTo(Node): int
+   moveDir: Node
+}
+class Observation {
+  + Observation(int, int, Vector2d, Vector2d, int): 
+  + update(int, int, Vector2d, Vector2d, int): void
+  + compareTo(Observation): int
+  + equals(Object): boolean
+}
+class OngoingAvatar {
+  + OngoingAvatar(): 
+  + OngoingAvatar(Vector2d, Dimension, SpriteContent): 
+  + move(Game, boolean[]): void
+  + update(Game): void
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+}
+class OrientedAvatar {
+  + OrientedAvatar(): 
+  + OrientedAvatar(Vector2d, Dimension, SpriteContent): 
+  + move(Game, boolean[]): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+  + update(Game): void
+  + copyTo(VGDLSprite): void
+}
+class OrientedFlicker {
+  + OrientedFlicker(Vector2d, Dimension, SpriteContent): 
+  + OrientedFlicker(): 
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + update(Game): void
+  + copy(): VGDLSprite
+}
+class Pair<T, U> {
+  + Pair(T, U): 
+  + compareTo(Object): int
+  + setValue(U): U
+  + copy(): Pair
+  + equals(Object): boolean
+   value: U
+   key: T
+}
+class Passive {
+  + Passive(): 
+  + Passive(Vector2d, Dimension, SpriteContent): 
+  # loadDefaults(): void
+  + copyTo(VGDLSprite): void
+  + copy(): VGDLSprite
+}
+class PathAltChaser {
+  + PathAltChaser(): 
+  + PathAltChaser(Vector2d, Dimension, SpriteContent): 
+  # loadDefaults(): void
+  + postProcess(): void
+  + update(Game): void
+  + copyTo(VGDLSprite): void
+  + copy(): VGDLSprite
+}
+class PathChaser {
+  + PathChaser(Vector2d, Dimension, SpriteContent): 
+  + PathChaser(): 
+  # loadDefaults(): void
+  # closestTargets(Game): void
+  + copy(): VGDLSprite
+  + update(Game): void
+  + postProcess(): void
+  + copyTo(VGDLSprite): void
+   dependentSprites: ArrayList<String>
+}
+class PathFinder {
+  + PathFinder(ArrayList<Integer>): 
+  - runAll(): void
+  - runAll(int, int): void
+  + run(StateObservation): void
+  + getPath(Vector2d, Vector2d): ArrayList<Node>
+  - init(): void
+  - isObstacle(int, int): boolean
+  + getNeighbours(Node): ArrayList<Node>
+}
+interface Physics << interface >> {
+  + passiveMovement(VGDLSprite): MOVEMENT
+  + activeMovement(VGDLSprite, Vector2d, double): MOVEMENT
+  + distance(Rectangle, Rectangle): double
+}
+class Point {
+  + Point(int, int): 
+  + Point(): 
+  + getDistance(Point): double
+   surroundingPoints: ArrayList<Point>
+}
+class Portal {
+  + Portal(): 
+  + Portal(Vector2d, Dimension, SpriteContent): 
+  + copy(): VGDLSprite
+  # loadDefaults(): void
+  + postProcess(): void
+  + copyTo(VGDLSprite): void
+   dependentSprites: ArrayList<String>
+}
+class PullWithIt {
+  + PullWithIt(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class Pulse {
+  + Pulse(int): 
+}
+class QPolicy {
+  + QPolicy(int): 
+  # makeInstance(double[]): Instance
+  + getActionNoExplore(double[]): int
+  + getAction(double[]): int
+  + getMaxQ(double[]): double
+  + getQArray(double[]): double[]
+  + fitQ(Instances): void
+   epsilon: double
+}
+class RLDataExtractor {
+  + RLDataExtractor(String): 
+  + featureExtract(StateObservation): double[]
+  + datasetHeader(): Instances
+  + makeInstance(double[], int, double): Instance
+}
+class RandomAltChaser {
+  + RandomAltChaser(): 
+  + RandomAltChaser(Vector2d, Dimension, SpriteContent): 
+  + postProcess(): void
+  + update(Game): void
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+}
+class RandomBomber {
+  + RandomBomber(): 
+  + RandomBomber(Vector2d, Dimension, SpriteContent): 
+  + update(Game): void
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+}
+class RandomInertial {
+  + RandomInertial(): 
+  + RandomInertial(Vector2d, Dimension, SpriteContent): 
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+}
+class RandomMissile {
+  + RandomMissile(): 
+  + RandomMissile(Vector2d, Dimension, SpriteContent): 
+  # loadDefaults(): void
+  + copyTo(VGDLSprite): void
+  + update(Game): void
+  + copy(): VGDLSprite
+}
+class RandomNPC {
+  + RandomNPC(Vector2d, Dimension, SpriteContent): 
+  + RandomNPC(): 
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+  # getRandomMove(Game): Vector2d
+  + update(Game): void
+  # loadDefaults(): void
+}
+class RandomPathAltChaser {
+  + RandomPathAltChaser(): 
+  + RandomPathAltChaser(Vector2d, Dimension, SpriteContent): 
+  + copy(): VGDLSprite
+  # loadDefaults(): void
+  + postProcess(): void
+  + copyTo(VGDLSprite): void
+  + update(Game): void
+}
+class Resource {
+  + Resource(): 
+  + Resource(Vector2d, Dimension, SpriteContent): 
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+  + postProcess(): void
+}
+class ResourcePack {
+  + ResourcePack(Vector2d, Dimension, SpriteContent): 
+  + ResourcePack(): 
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+}
+class ReverseDirection {
+  + ReverseDirection(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class SharedData {
+  + SharedData(): 
+}
+class ShieldFrom {
+  + ShieldFrom(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class ShootAvatar {
+  + ShootAvatar(Vector2d, Dimension, SpriteContent): 
+  + ShootAvatar(): 
+  - reduceAmmo(): void
+  + update(Game): void
+  + copy(): VGDLSprite
+  + updateUse(Game): void
+  # loadDefaults(): void
+  + postProcess(): void
+  + move(Game, boolean[]): void
+  - hasAmmo(): boolean
+  - shoot(Game): void
+  + copyTo(VGDLSprite): void
+   dependentSprites: ArrayList<String>
+}
+class SimpleStateHeuristic {
+  + SimpleStateHeuristic(StateObservation): 
+  + evaluateState(StateObservation): double
+}
+class SingleMCTSPlayer {
+  + SingleMCTSPlayer(Random): 
+  + run(ElapsedCpuTimer): int
+  - expand(SingleTreeNode, StateObservation): SingleTreeNode
+  + rollOut(StateObservation): double
+  + init(StateObservation): void
+  - mctsSearch(ElapsedCpuTimer, StateObservation): void
+  - value(StateObservation, int): double
+  - treePolicy(StateObservation): SingleTreeNode
+  - finishRollout(StateObservation, int): boolean
+}
+class SingleMCTSPlayer {
+  + SingleMCTSPlayer(Random): 
+  + init(StateObservation): void
+  + run(ElapsedCpuTimer): int
+}
+class SingleMCTSPlayer {
+  + SingleMCTSPlayer(Random): 
+  + init(StateObservation): void
+  + run(ElapsedCpuTimer): int
+}
+class SingleMCTSPlayer {
+  + SingleMCTSPlayer(Random): 
+  + init(StateObservation): void
+  + run(ElapsedCpuTimer): int
+}
+class SingleTreeNode {
+  + SingleTreeNode(StateObservation, SingleTreeNode, Random): 
+  + SingleTreeNode(Random): 
+  + notFullyExpanded(): boolean
+  + mctsSearch(ElapsedCpuTimer): void
+  + expand(): SingleTreeNode
+  + rollOut(): double
+  + finishRollout(StateObservation, int): boolean
+  + bestAction(): int
+  + mostVisitedAction(): int
+  + value(StateObservation): double
+  + treePolicy(): SingleTreeNode
+  + backUp(SingleTreeNode, double): void
+  + uct(): SingleTreeNode
+  + egreedy(): SingleTreeNode
+}
+class SingleTreeNode {
+  + SingleTreeNode(SingleTreeNode, int, Random): 
+  + SingleTreeNode(Random): 
+  + mctsSearch(ElapsedCpuTimer): void
+  + bestAction(): int
+  + backUp(SingleTreeNode, double): void
+  + rollOut(StateObservation): double
+  + uct(StateObservation): SingleTreeNode
+  + notFullyExpanded(): boolean
+  + value(StateObservation): double
+  + mostVisitedAction(): int
+  + expand(StateObservation): SingleTreeNode
+  + treePolicy(StateObservation): SingleTreeNode
+  + finishRollout(StateObservation, int): boolean
+}
+class SingleTreeNode {
+  + SingleTreeNode(Random): 
+  + SingleTreeNode(StateObservation, SingleTreeNode, Random): 
+  + uct(): SingleTreeNode
+  + egreedy(): SingleTreeNode
+  + rollOut(): double
+  + backUp(SingleTreeNode, double): void
+  + finishRollout(StateObservation, int): boolean
+  + value(StateObservation): double
+  + mctsSearch(ElapsedCpuTimer): void
+  + treePolicy(): SingleTreeNode
+  + notFullyExpanded(): boolean
+  + expand(): SingleTreeNode
+  + mostVisitedAction(): int
+  + bestAction(): int
+}
+class SingleTreeNode {
+  + SingleTreeNode(): 
+  + SingleTreeNode(SingleTreeNode, int, int, double): 
+  + nodeDepth: int
+  - tabooBias: double
+  - nbGenerated: int
+  - actionIndex: int
+  + mostVisitedAction(): int
+  + selectChild(): SingleTreeNode
+  + refreshTree(): void
+  + backUp(SingleTreeNode, double): void
+  - bestAction(): int
+  + notFullyExpanded(): boolean
+   tabooBias: double
+   adjustedEmaxScore: double
+   actionIndex: int
+   nodeDepth: int
+   nbGenerated: int
+}
+class SolutionLengthConstraint {
+  + SolutionLengthConstraint(): 
+  + checkConstraint(): double
+}
+class Spawn {
+  + Spawn(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+   effectSprites: ArrayList<String>
+}
+class SpawnIfHasLess {
+  + SpawnIfHasLess(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+   effectSprites: ArrayList<String>
+}
+class SpawnIfHasMore {
+  + SpawnIfHasMore(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+   effectSprites: ArrayList<String>
+}
+class SpawnPoint {
+  + SpawnPoint(Vector2d, Dimension, SpriteContent): 
+  + SpawnPoint(): 
+  # loadDefaults(): void
+  + postProcess(): void
+  + update(Game): void
+  + copyTo(VGDLSprite): void
+  + copy(): VGDLSprite
+   dependentSprites: ArrayList<String>
+}
+class Spreader {
+  + Spreader(): 
+  + Spreader(Vector2d, Dimension, SpriteContent): 
+  # loadDefaults(): void
+  + postProcess(): void
+  + copyTo(VGDLSprite): void
+  + update(Game): void
+  + copy(): VGDLSprite
+   dependentSprites: ArrayList<String>
+}
+class SpriteContent {
+  + SpriteContent(String): 
+  + SpriteContent(): 
+  + SpriteContent(String, String): 
+  + assignTypes(ArrayList<String>): void
+  + toString(): String
+}
+class SpriteCounter {
+  + SpriteCounter(): 
+  + SpriteCounter(TerminationContent): 
+  + isDone(Game): boolean
+   terminationSprites: ArrayList<String>
+}
+class SpriteData {
+  + SpriteData(): 
+  + toString(): String
+}
+class SpriteGroup {
+  + SpriteGroup(int): 
+  - sprites: ConcurrentHashMap<Integer, VGDLSprite>
+  - itype: int
+  + removeSprite(int): void
+  + addSprite(int, VGDLSprite): void
+  + getSprite(int): VGDLSprite
+  + numSprites(): int
+  + addAllSprites(Collection<VGDLSprite>): void
+  + clear(): void
+  + copyAllSprites(Collection<VGDLSprite>): void
+   sprites: ConcurrentHashMap<Integer, VGDLSprite>
+   keys: Integer[]
+   itype: int
+   firstSprite: VGDLSprite
+   spriteIterator: Iterator<VGDLSprite>
+}
+class SpriteNumberConstraint {
+  + SpriteNumberConstraint(): 
+  + checkConstraint(): double
+}
+class SpritePointData {
+  + SpritePointData(String, int, int): 
+}
+class SpriteProducer {
+  + SpriteProducer(): 
+  + SpriteProducer(Vector2d, Dimension, SpriteContent): 
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+  + copyTo(VGDLSprite): void
+}
+class StatSummary {
+  + StatSummary(String): 
+  + StatSummary(): 
+  + sumSquareDiff(): double
+  + sd(): double
+  + stdErr(): double
+  + add(Number): void
+  + mean(): double
+  + add(double[]): void
+  + copy(): StatSummary
+  + n(): int
+  - computeStats(): void
+  + min(): double
+  + sum(): double
+  + toString(): String
+  + add(double): void
+  + max(): double
+  + add(StatSummary): void
+  + reset(): void
+}
+class StateHeuristic {
+  + StateHeuristic(): 
+  + evaluateState(StateObservation): double
+}
+class StateObservation {
+  + StateObservation(ForwardModel): 
+  + getAvailableActions(boolean): ArrayList<ACTIONS>
+  + getFromAvatarSpritesPositions(Vector2d): ArrayList<Observation>[]
+  + equiv(Object): boolean
+  + getNPCPositions(Vector2d): ArrayList<Observation>[]
+  + getMovablePositions(Vector2d): ArrayList<Observation>[]
+  + advance(ACTIONS): void
+  + copy(): StateObservation
+  + getImmovablePositions(Vector2d): ArrayList<Observation>[]
+  + getResourcesPositions(Vector2d): ArrayList<Observation>[]
+  + getPortalsPositions(Vector2d): ArrayList<Observation>[]
+   avatarSpeed: double
+   newSeed: int
+   eventsHistory: TreeSet<Event>
+   blockSize: int
+   immovablePositions: ArrayList<Observation>[]
+   gameWinner: WINNER
+   avatarMaxHealthPoints: int
+   avatarHealthPoints: int
+   avatarLastAction: ACTIONS
+   portalsPositions: ArrayList<Observation>[]
+   fromAvatarSpritesPositions: ArrayList<Observation>[]
+   gameTick: int
+   avatarType: int
+   avatarOrientation: Vector2d
+   avatarPosition: Vector2d
+   avatarResources: HashMap<Integer, Integer>
+   gameOver: boolean
+   resourcesPositions: ArrayList<Observation>[]
+   worldDimension: Dimension
+   gameScore: double
+   NPCPositions: ArrayList<Observation>[]
+   observationGrid: ArrayList<Observation>[][]
+   availableActions: ArrayList<ACTIONS>
+   avatarLimitHealthPoints: int
+   movablePositions: ArrayList<Observation>[]
+}
+class StepBack {
+  + StepBack(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+  - calculatePixelPerfect(VGDLSprite, VGDLSprite): Rectangle
+}
+class StepController {
+  + StepController(AbstractPlayer, long): 
+  - finalState: StateObservation
+  - solution: ArrayList<ACTIONS>
+  + playGame(StateObservation, ElapsedCpuTimer): void
+   solution: ArrayList<ACTIONS>
+   finalState: StateObservation
+}
+class SubtractHealthPoints {
+  + SubtractHealthPoints(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class TeleportToExit {
+  + TeleportToExit(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class Termination {
+  + Termination(): 
+  + parseParameters(TerminationContent): void
+  + isFinished(Game): boolean
+  + isDone(Game): boolean
+   terminationSprites: ArrayList<String>
+}
+class TerminationContent {
+  + TerminationContent(): 
+  + TerminationContent(String): 
+}
+class TerminationData {
+  + TerminationData(): 
+  + toString(): String
+}
+class TimeEffect {
+  + TimeEffect(): 
+  + TimeEffect(InteractionContent, Effect): 
+  + TimeEffect(Effect): 
+  + copy(): TimeEffect
+  + copyTo(TimeEffect): void
+  + planExecution(Game): void
+  + compareTo(TimeEffect): int
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class Timeout {
+  + Timeout(TerminationContent): 
+  + Timeout(): 
+  + isDone(Game): boolean
+}
+enum TimerType << enumeration >> {
+  + TimerType(): 
+  + values(): TimerType[]
+  + valueOf(String): TimerType
+}
+class TransformTo {
+  + TransformTo(InteractionContent): 
+  # transformTo(VGDLSprite, VGDLSprite, VGDLSprite, Game): void
+  + execute(VGDLSprite, VGDLSprite, Game): void
+   effectSprites: ArrayList<String>
+}
+class TransformToAll {
+  + TransformToAll(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+   effectSprites: ArrayList<String>
+}
+class TransformToSingleton {
+  + TransformToSingleton(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+  - setSpriteFields(Game, VGDLSprite, VGDLSprite): void
+   effectSprites: ArrayList<String>
+}
+class TreeNode {
+  + TreeNode(StateObservation, TreeNode): 
+  + ExploreNode(): double
+  - EvaluateState(StateObservation): double
+  + SelectNode(): TreeNode
+  - GetUnexplored(): int
+  + UpdateNode(double): void
+  + GetBestChild(): int
+  - GetRandomActionIndex(): int
+}
+class TurnAround {
+  + TurnAround(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class Types {
+  + Types(): 
+}
+class UndoAll {
+  + UndoAll(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class Utils {
+  + Utils(): 
+  + processMovementActionKeys(boolean[]): Vector2d
+  + triPoints(Rectangle, Vector2d): Polygon
+  + normalise(double, double, double): double
+  + choice(Object[], Random): Object
+  + choice(ArrayList<Vector2d>, Random): Vector2d
+  + processUseKey(boolean[]): boolean
+  + argmax(double[]): int
+  + noise(double, double, double): double
+  + roundedPoints(Rectangle): Polygon?
+  + formatString(String): String
+}
+class VGDLFactory {
+  - VGDLFactory(): 
+  + createEffect(InteractionContent): Effect
+  + createSprite(SpriteContent, Vector2d, Dimension): VGDLSprite
+  + init(): void
+  + parseParameters(Content, Object): void
+  + GetInstance(): VGDLFactory
+  + requestFieldValueInt(Object, String): int
+  + createGame(GameContent): Game
+  + createTermination(TerminationContent): Termination
+}
+class VGDLParser {
+  + VGDLParser(): 
+  - updateSet(String): void
+  - parseSpriteSet(ArrayList<Node>): void
+  + parseGame(String): Game
+  - indentTreeParser(String[]): Node
+  - parseInteractionSet(ArrayList<Node>): void
+  - parseLevelMapping(ArrayList<Node>): void
+  - parseTerminationSet(ArrayList<Node>): void
+  - _parseSprites(ArrayList<Node>, String, HashMap<String, String>, ArrayList<String>): void
+}
+class VGDLRegistry {
+  - VGDLRegistry(): 
+  + init(): void
+  + registerSprite(String): int
+  + getRegisteredSpriteValue(String): int
+  + explode(String): int[]
+  + getRegisteredSpriteKey(int): String
+  + GetInstance(): VGDLRegistry
+  + numSpriteTypes(): int
+}
+class VGDLSprite {
+  + VGDLSprite(): 
+  + rect: Rectangle
+  + _drawImage(Graphics2D, Game, Rectangle): void
+  # loadDefaults(): void
+  + _updatePos(Vector2d, int): boolean
+  + loadImage(String): void
+  + _draw(Graphics2D, Game, Rectangle): void
+  + toString(): String
+  # _drawResources(Graphics2D, Game, Rectangle): void
+  + _drawOriented(Graphics2D, Rectangle): void
+  + _updateOrientation(Vector2d): boolean
+  + equiv(Object): boolean
+  + copyTo(VGDLSprite): void
+  + lastDirection(): Vector2d
+  + modifyResource(int, int): void
+  + parseParameters(SpriteContent): void
+  + draw(Graphics2D, Game): void
+  + postProcess(): void
+  + updatePassive(): void
+  + getAmountResource(int): int
+  + update(Game): void
+  - determinePhysics(int, Dimension): Physics
+  # _drawHealthBar(Graphics2D, Game, Rectangle): void
+  - setRandomColor(): void
+  + copy(): VGDLSprite
+  # init(Vector2d, Dimension): void
+  + preMovement(): void
+  + _velocity(): Vector2d
+  + setRect(Vector2d, Dimension): void
+   dependentSprites: ArrayList<String>
+   position: Vector2d
+   rect: Rectangle
+   type: int
+   fromAvatar: boolean
+}
+class VGDLViewer {
+  + VGDLViewer(Game, AbstractPlayer): 
+  + paintComponent(Graphics): void
+  + paint(SpriteGroup[]): void
+   preferredSize: Dimension
+}
+class Vector2d {
+  + Vector2d(): 
+  + Vector2d(Vector2d): 
+  + Vector2d(double, double): 
+  + copy(): Vector2d
+  + add(Vector2d): Vector2d
+  + add(Vector2d, double): Vector2d
+  + wrap(double, double): Vector2d
+  + zero(): void
+  + set(double, double): void
+  + rotate(double): void
+  + subtract(Vector2d): Vector2d
+  + set(Vector2d): void
+  + subtract(double, double): Vector2d
+  + sqr(double): double
+  + add(double, double): Vector2d
+  + dot(Vector2d): double
+  + toString(): String
+  + theta(): double
+  + unitVector(): Vector2d
+  + mag(): double
+  + scalarProduct(Vector2d): double
+  + sqDist(Vector2d): double
+  + normalise(): void
+  + equals(Object): boolean
+  + mul(double): Vector2d
+  + dist(double, double): double
+  + dist(Vector2d): double
+}
+enum WINNER << enumeration >> {
+  - WINNER(int): 
+  + key(): int
+  + valueOf(String): WINNER
+  + values(): WINNER[]
+}
+class Walker {
+  + Walker(): 
+  + Walker(Vector2d, Dimension, SpriteContent): 
+  + copyTo(VGDLSprite): void
+  # loadDefaults(): void
+  + copy(): VGDLSprite
+}
+class WalkerJumper {
+  + WalkerJumper(Vector2d, Dimension, SpriteContent): 
+  + WalkerJumper(): 
+  + copyTo(VGDLSprite): void
+  + copy(): VGDLSprite
+  # loadDefaults(): void
+}
+class WallStop {
+  + WallStop(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+class WinConstraint {
+  + WinConstraint(): 
+  + checkConstraint(): double
+}
+class WinScoreHeuristic {
+  + WinScoreHeuristic(StateObservation): 
+  + evaluateState(StateObservation): double
+}
+class WindowInput {
+  + WindowInput(): 
+  + windowClosed(WindowEvent): void
+}
+class WrapAround {
+  + WrapAround(InteractionContent): 
+  + execute(VGDLSprite, VGDLSprite, Game): void
+}
+
+ACTIONS                    +-[#820000,plain]-  Types                     
+AddHealthPoints            -[#000082,plain]-^  Effect                    
+AddTimer                   -[#000082,plain]-^  TimeEffect                
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+Agent                      -[#000082,plain]-^  AbstractPlayer            
+AlternateChaser            -[#000082,plain]-^  RandomNPC                 
+AttractGaze                -[#000082,plain]-^  Effect                    
+AvatarNumberConstraint     -[#000082,plain]-^  AbstractConstraint        
+BasicGame                  -[#000082,plain]-^  Game                      
+Bomber                     -[#000082,plain]-^  SpawnPoint                
+BounceForward              -[#000082,plain]-^  Effect                    
+Bucket                     +-[#820000,plain]-  Game                      
+ChangeResource             -[#000082,plain]-^  Effect                    
+Chaser                     -[#000082,plain]-^  RandomNPC                 
+CloneSprite                -[#000082,plain]-^  Effect                    
+CollectResource            -[#000082,plain]-^  Effect                    
+CollectResourceIfHeld      -[#000082,plain]-^  Effect                    
+CombinedConstraints        -[#000082,plain]-^  AbstractConstraint        
+ContinuousPhysics          -[#000082,plain]-^  GridPhysics               
+Conveyor                   -[#000082,plain]-^  VGDLSprite                
+CoverPercentageConstraint  -[#000082,plain]-^  AbstractConstraint        
+DataPoint                  +-[#820000,plain]-  LevelGenerator            
+DeathConstraint            -[#000082,plain]-^  AbstractConstraint        
+Door                       -[#000082,plain]-^  Immovable                 
+ErraticMissile             -[#000082,plain]-^  Missile                   
+FlakAvatar                 -[#000082,plain]-^  HorizontalAvatar          
+Fleeing                    -[#000082,plain]-^  Chaser                    
+Flicker                    -[#000082,plain]-^  VGDLSprite                
+FlipDirection              -[#000082,plain]-^  Effect                    
+ForwardModel               -[#000082,plain]-^  Game                      
+GameContent                -[#000082,plain]-^  Content                   
+GoalConstraint             -[#000082,plain]-^  AbstractConstraint        
+GravityPhysics             -[#000082,plain]-^  ContinuousPhysics         
+GridPhysics                -[#008200,dashed]-^  Physics                   
+HorizontalAvatar           -[#000082,plain]-^  MovingAvatar              
+Immovable                  -[#000082,plain]-^  VGDLSprite                
+InteractionContent         -[#000082,plain]-^  Content                   
+InteractionData            +-[#820000,plain]-  GameDescription           
+InteractionType            +-[#820000,plain]-  GameAnalyzer              
+KeyInput                   -[#000082,plain]-^  KeyHandler                
+KeyPulse                   -[#000082,plain]-^  KeyHandler                
+KillBoth                   -[#000082,plain]-^  Effect                    
+KillIfFromAbove            -[#000082,plain]-^  Effect                    
+KillIfFrontal              -[#000082,plain]-^  Effect                    
+KillIfHasLess              -[#000082,plain]-^  Effect                    
+KillIfHasMore              -[#000082,plain]-^  Effect                    
+KillIfNotFrontal           -[#000082,plain]-^  Effect                    
+KillIfOtherHasMore         -[#000082,plain]-^  Effect                    
+KillSprite                 -[#000082,plain]-^  Effect                    
+LevelGenerator             -[#000082,plain]-^  AbstractLevelGenerator    
+LevelGenerator             -[#000082,plain]-^  AbstractLevelGenerator    
+LevelGenerator             -[#000082,plain]-^  AbstractLevelGenerator    
+MOVEMENT                   +-[#820000,plain]-  Types                     
+MappingContent             -[#000082,plain]-^  Content                   
+Missile                    -[#000082,plain]-^  VGDLSprite                
+MissileAvatar              -[#000082,plain]-^  OrientedAvatar            
+MovingAvatar               -[#000082,plain]-^  VGDLSprite                
+MultiSpriteCounter         -[#000082,plain]-^  Termination               
+NoFrictionPhysics          -[#000082,plain]-^  ContinuousPhysics         
+OngoingAvatar              -[#000082,plain]-^  OrientedAvatar            
+OrientedAvatar             -[#000082,plain]-^  MovingAvatar              
+OrientedFlicker            -[#000082,plain]-^  Flicker                   
+Passive                    -[#000082,plain]-^  VGDLSprite                
+PathAltChaser              -[#000082,plain]-^  AlternateChaser           
+PathChaser                 -[#000082,plain]-^  RandomNPC                 
+Point                      +-[#820000,plain]-  LevelData                 
+Portal                     -[#000082,plain]-^  SpriteProducer            
+PullWithIt                 -[#000082,plain]-^  Effect                    
+Pulse                      +-[#820000,plain]-  KeyPulse                  
+RandomAltChaser            -[#000082,plain]-^  AlternateChaser           
+RandomBomber               -[#000082,plain]-^  SpawnPoint                
+RandomInertial             -[#000082,plain]-^  RandomNPC                 
+RandomMissile              -[#000082,plain]-^  Missile                   
+RandomNPC                  -[#000082,plain]-^  VGDLSprite                
+RandomPathAltChaser        -[#000082,plain]-^  PathAltChaser             
+Resource                   -[#000082,plain]-^  Passive                   
+ResourcePack               -[#000082,plain]-^  Resource                  
+ReverseDirection           -[#000082,plain]-^  Effect                    
+ShieldFrom                 -[#000082,plain]-^  Effect                    
+ShootAvatar                -[#000082,plain]-^  OrientedAvatar            
+SimpleStateHeuristic       -[#000082,plain]-^  StateHeuristic            
+SolutionLengthConstraint   -[#000082,plain]-^  AbstractConstraint        
+Spawn                      -[#000082,plain]-^  Effect                    
+SpawnIfHasLess             -[#000082,plain]-^  Effect                    
+SpawnIfHasMore             -[#000082,plain]-^  Effect                    
+SpawnPoint                 -[#000082,plain]-^  SpriteProducer            
+Spreader                   -[#000082,plain]-^  Flicker                   
+SpriteContent              -[#000082,plain]-^  Content                   
+SpriteCounter              -[#000082,plain]-^  Termination               
+SpriteData                 +-[#820000,plain]-  GameDescription           
+SpriteNumberConstraint     -[#000082,plain]-^  AbstractConstraint        
+SpritePointData            +-[#820000,plain]-  Chromosome                
+SpriteProducer             -[#000082,plain]-^  VGDLSprite                
+StepBack                   -[#000082,plain]-^  Effect                    
+SubtractHealthPoints       -[#000082,plain]-^  Effect                    
+TeleportToExit             -[#000082,plain]-^  Effect                    
+TerminationContent         -[#000082,plain]-^  Content                   
+TerminationData            +-[#820000,plain]-  GameDescription           
+TimeEffect                 -[#000082,plain]-^  Effect                    
+Timeout                    -[#000082,plain]-^  Termination               
+TimerType                  +-[#820000,plain]-  ElapsedCpuTimer           
+TransformTo                -[#000082,plain]-^  Effect                    
+TransformToAll             -[#000082,plain]-^  TransformTo               
+TransformToSingleton       -[#000082,plain]-^  Effect                    
+TurnAround                 -[#000082,plain]-^  Effect                    
+UndoAll                    -[#000082,plain]-^  Effect                    
+WINNER                     +-[#820000,plain]-  Types                     
+Walker                     -[#000082,plain]-^  Missile                   
+WalkerJumper               -[#000082,plain]-^  Walker                    
+WallStop                   -[#000082,plain]-^  Effect                    
+WinConstraint              -[#000082,plain]-^  AbstractConstraint        
+WinScoreHeuristic          -[#000082,plain]-^  StateHeuristic            
+WrapAround                 -[#000082,plain]-^  Effect                    
+@enduml
